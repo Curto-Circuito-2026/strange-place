@@ -1,21 +1,56 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
     [SerializeField] GameObject jumpPrefab;
     [SerializeField] GameObject runPrefab;
 
+    [SerializeField] float suctionForce;
+    [SerializeField] float suctionSpeed;
+    [SerializeField] string newSceneName;
+ 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("TROCANDO");
-            PlayerMovement pm = collision.gameObject.GetComponent<PlayerMovement>();
-            pm.SetJump(jumpPrefab);
-            pm.SetRun(runPrefab);
+            PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
+            pm.canJump = false;
+            pm.canRun = false;
         }
     }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
+            pm.SetJump(jumpPrefab);
+            pm.SetRun(runPrefab);
+            pm.canJump = true;
+            pm.canRun = true;
+            //todo
+            //remover comentario
+            //SceneManager.LoadScene(newSceneName);
+            Debug.Log("mandar pra outra scene");
+        }
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {   
+        if (other.CompareTag("Player"))
+        {
+            Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
+            if (playerRb != null)
+            {
+                Vector2 directionToPortal = (transform.position - other.transform.position).normalized;
+                playerRb.AddForce(directionToPortal * suctionForce, ForceMode2D.Force);
+                if (playerRb.linearVelocity.magnitude > suctionSpeed)
+                {
+                    playerRb.linearVelocity = playerRb.linearVelocity.normalized * suctionSpeed;
+                }
+            }
+
+        }
+    }
+        
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] GameObject initialRunPrefab;
+
+    public bool canRun = true;
+    public bool canJump = true;
     IRun curRun;
     IJump curJump;
     Rigidbody2D rb;
@@ -21,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        if (value.isPressed)
+        if (value.isPressed && canJump && curJump !=null)
         {
             curJump.Jump(rb);
         }
@@ -29,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        curRun.Move(rb,_input);
+        if(canRun && curRun !=null) curRun.Move(rb,_input);
     }
 
     public void SetJump(GameObject jumpPrefab) 
@@ -43,9 +46,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (prefabClass != null) 
         {
-            System.Type tipoDoScript = prefabClass.GetType();
-            curJump = gameObject.AddComponent(tipoDoScript) as IJump;
-            Debug.Log(tipoDoScript.Name);
+            System.Type scriptType = prefabClass.GetType();
+            curJump = gameObject.AddComponent(scriptType) as IJump;
         }
     }
     public void SetRun(GameObject runPrefab) 
@@ -59,9 +61,8 @@ public class PlayerMovement : MonoBehaviour
 
     if (prefabClass != null) 
     {
-        System.Type tipoDoScript = prefabClass.GetType();
-        curRun = gameObject.AddComponent(tipoDoScript) as IRun;
-        Debug.Log(tipoDoScript.Name);
+        System.Type scriptType = prefabClass.GetType();
+        curRun = gameObject.AddComponent(scriptType) as IRun;
     }
 }
 }
