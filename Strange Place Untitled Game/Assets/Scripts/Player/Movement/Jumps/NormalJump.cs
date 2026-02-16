@@ -2,34 +2,32 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 
-public class PlayerJump : MonoBehaviour
+
+public class NormalJump : MonoBehaviour, IJump
 {
+    public bool CanJump { get; private set; }
+
+
+    //todo
+
+    //dar um jeito de tirar esses valores setados por codigo e passar pro inspetor
+    #region jump
     [Header("Força do pulo")]
     [SerializeField] float jumpForce = 14f;
     [SerializeField] float wallReflectForce = 50f;
     
     [Header("Camadas de detecção")]
-    [SerializeField] LayerMask groundLayer;
-    [SerializeField] LayerMask wallLayer;
+    [SerializeField] LayerMask groundLayer= (1<<8);
+    [SerializeField] LayerMask wallLayer = (1<<9);
 
-    Rigidbody2D rb;
+    
     bool canJump = true;
     float opositeForce;
 
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    #endregion
 
-    public void OnJump(InputValue value)
-    {
-        if (value.isPressed && canJump)
-        {
-            JumpRoutine();
-        }
-    }
 
-    void JumpRoutine()
+    public void Jump(Rigidbody2D rb)
     {
         rb.linearVelocity = new Vector2(wallReflectForce*opositeForce, jumpForce);
         canJump = false;

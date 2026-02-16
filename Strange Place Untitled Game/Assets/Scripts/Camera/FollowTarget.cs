@@ -8,7 +8,6 @@ public class FollowTarget : MonoBehaviour
     {
         var newPos = target.position;
         newPos.z = -1;
-        Debug.Log(newPos);
         transform.position = newPos;
     }
 }

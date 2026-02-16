@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6922766904655268681}
   - component: {fileID: 289366782483348618}
   - component: {fileID: 4832219074755518990}
-  - component: {fileID: 6325127061251745810}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -171,9 +170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbbfaf7386e4d040b180c1f1f884321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  maxSpeed: 12
-  acceleration: 10
-  deceleration: 12
 --- !u!114 &4832219074755518990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,23 +200,3 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &6325127061251745810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3238034514737891134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc0b1ee323029664783e34ef65533459, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
-  jumpForce: 5
-  wallReflectForce: 50
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 512

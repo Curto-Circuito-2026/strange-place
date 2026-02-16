@@ -3,30 +3,65 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Velocidade do movimento")]
-    [SerializeField] float maxSpeed = 12f;      
-    [SerializeField] float acceleration = 10f;  
-    [SerializeField] float deceleration = 12f;  
-
-    Rigidbody2D RB;
-    float _move;
-
+    [SerializeField] GameObject initialRunPrefab;
+    IRun curRun;
+    IJump curJump;
+    Rigidbody2D rb;
+    Vector2 _input;
     void Awake()
     {
-        RB = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        SetRun(initialRunPrefab);
     }
 
     void OnMove(InputValue value)
     {
-        _move = value.Get<Vector2>().x;
+        _input = value.Get<Vector2>();
+    }
+
+    public void OnJump(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            curJump.Jump(rb);
+        }
     }
 
     private void FixedUpdate()
     {
-        float targetSpeed = _move * maxSpeed;
-        float speedDif = targetSpeed - RB.linearVelocityX;
-        float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
-        float movement = speedDif * accelRate;
-        RB.AddForce(Vector2.right * movement, ForceMode2D.Force);
+        curRun.Move(rb,_input);
     }
+
+    public void SetJump(GameObject jumpPrefab) 
+    {
+        if (curJump != null) 
+        {
+            Destroy(curJump as MonoBehaviour);
+        }
+
+        IJump prefabClass = jumpPrefab.GetComponent<IJump>();
+
+        if (prefabClass != null) 
+        {
+            System.Type tipoDoScript = prefabClass.GetType();
+            curJump = gameObject.AddComponent(tipoDoScript) as IJump;
+            Debug.Log(tipoDoScript.Name);
+        }
+    }
+    public void SetRun(GameObject runPrefab) 
+{
+    if (curRun != null) 
+    {
+        Destroy(curRun as MonoBehaviour);
+    }
+
+    IRun prefabClass = runPrefab.GetComponent<IRun>();
+
+    if (prefabClass != null) 
+    {
+        System.Type tipoDoScript = prefabClass.GetType();
+        curRun = gameObject.AddComponent(tipoDoScript) as IRun;
+        Debug.Log(tipoDoScript.Name);
+    }
+}
 }
