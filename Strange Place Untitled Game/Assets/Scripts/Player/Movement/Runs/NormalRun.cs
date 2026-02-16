@@ -1,23 +1,17 @@
 
 
 using UnityEngine;
+using System.Collections;
 
 public class NormalRun : MonoBehaviour, IRun
 {
+    public float maxSpeed { get; set; }
+    public float acceleration { get; set; }
+    public float deceleration { get; set; }
 
-    //todo
-
-    //dar um jeito de tirar esses valores setados por codigo e passar pro inspetor
-
-    #region run
-    [Header("Velocidade do movimento")]
-    [SerializeField] float maxSpeed = 12f;      
-    [SerializeField] float acceleration = 10f;  
-    [SerializeField] float deceleration = 12f;  
-
+    public bool IsSliding { get; set; }
     public Animator Animator { get; set; }
-    
-    #endregion
+
     public void Move(Rigidbody2D rb,Vector2 input)
     {
         float targetSpeed = input.x * maxSpeed;
@@ -26,4 +20,22 @@ public class NormalRun : MonoBehaviour, IRun
         float movement = speedDif * accelRate;
         rb.AddForce(Vector2.right * movement, ForceMode2D.Force);
     }
+
+    public IEnumerator SlideCor(Rigidbody2D rb, Vector2 input)
+    {
+        Animator.SetBool("isSliding", true);
+        IsSliding = true;
+        float targetSpeed = input.x * maxSpeed * 1.5f;
+        rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
+        yield return new WaitForSeconds(2f);
+
+        rb.linearVelocity = new Vector2(targetSpeed * 0.5f, rb.linearVelocity.y);
+
+        IsSliding = false;
+        Animator.SetBool("isSliding", false);
+
+
+    }
+
+
 }

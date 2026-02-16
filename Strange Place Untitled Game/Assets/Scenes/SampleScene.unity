@@ -781,6 +781,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 289366782483348618, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 3238034514737891134, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -841,6 +845,10 @@ PrefabInstance:
     - target: {fileID: 1886065762116156614, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886065762116156614, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
       propertyPath: m_LocalPosition.x

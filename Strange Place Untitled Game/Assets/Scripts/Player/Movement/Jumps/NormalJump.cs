@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using System.Diagnostics;
 
 
 public class NormalJump : MonoBehaviour, IJump
@@ -8,26 +9,19 @@ public class NormalJump : MonoBehaviour, IJump
     public bool CanJump { get; private set; } = true;
     public Animator Animator { get; set; }
 
-    //todo
-    //dar um jeito de tirar esses valores setados por codigo e passar pro inspetor
+    public float jumpForce { get; set; }
+    public float wallReflectForce { get; set; }
 
-    #region jump
-    [Header("Força do pulo")]
-    [SerializeField] float jumpForce = 7f;
-    [SerializeField] float wallReflectForce = 50f;
-    
-    [Header("Camadas de detecção")]
-    [SerializeField] LayerMask groundLayer= (1<<8);
-    [SerializeField] LayerMask wallLayer = (1<<9);
+    public LayerMask groundLayer { get; set; }
+
+    public LayerMask wallLayer { get; set; }
 
     float opositeForce;
 
-    #endregion
-
-
     public void Jump(Rigidbody2D rb)
     {
-    
+        UnityEngine.Debug.Log(jumpForce);
+
         Animator.SetTrigger("Jump");
         rb.linearVelocity = new Vector2(wallReflectForce*opositeForce, jumpForce);
         CanJump = false;
