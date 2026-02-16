@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0b1ee323029664783e34ef65533459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
-  jumpForce: 5
+  jumpForce: 0
   wallReflectForce: 50
   groundLayer:
     serializedVersion: 2

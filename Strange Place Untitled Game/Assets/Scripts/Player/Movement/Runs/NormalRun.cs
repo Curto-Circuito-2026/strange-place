@@ -15,6 +15,8 @@ public class NormalRun : MonoBehaviour, IRun
     [SerializeField] float acceleration = 10f;  
     [SerializeField] float deceleration = 12f;  
 
+    public Animator Animator { get; set; }
+    
     #endregion
     public void Move(Rigidbody2D rb,Vector2 input)
     {
