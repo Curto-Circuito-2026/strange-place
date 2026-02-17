@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using System.Collections;
-using System.Diagnostics;
+
 
 
 public class NormalJump : MonoBehaviour, IJump

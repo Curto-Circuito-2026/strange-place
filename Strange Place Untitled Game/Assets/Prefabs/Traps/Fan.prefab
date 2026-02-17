@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a054ac0fbbd1c4c8e7210268f79875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fan
-  particles: {fileID: 0}
+  particles: {fileID: 7386138632864438024}
   fanForce: 15
 --- !u!1 &5218769096558403001
 GameObject:

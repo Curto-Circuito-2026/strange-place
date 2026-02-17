@@ -1,11 +1,14 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class FallingPlatform : MonoBehaviour, ITrap
 {
     [SerializeField] float fallDelay;
     [SerializeField] float destroyDelay;
+
+    [SerializeField] ParticleSystem particles;
+
+    [SerializeField] float decreaseHeight;
     Animator animator;
     Rigidbody2D rb;
 
@@ -22,12 +25,21 @@ public class FallingPlatform : MonoBehaviour, ITrap
     {   
         IsOn = state;
         animator.enabled = IsOn;
+        if(IsOn)
+        {
+            particles.Play();
+        }
+        else
+        {
+            particles.Pause();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            transform.position = new Vector2(transform.position.x, transform.position.y-decreaseHeight);
             StartCoroutine(Fall());
         }
     }
