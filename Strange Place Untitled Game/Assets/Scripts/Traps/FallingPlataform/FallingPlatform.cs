@@ -10,7 +10,7 @@ public class FallingPlatform : MonoBehaviour, ITrap
     Rigidbody2D rb;
 
     BoxCollider2D boxCollider;
-    public bool IsOn { get; set; }
+    public bool IsOn { get; set; } = true;
 
     private void Awake() 
     {

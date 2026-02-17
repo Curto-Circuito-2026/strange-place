@@ -5,7 +5,7 @@ public class Saw : MonoBehaviour, ITrap
 {
     [SerializeField] float damage;
    
-    public bool IsOn {get;set;}
+    public bool IsOn {get;set;} = true;
 
     [Header("Movimento por waypoints")]
     [SerializeField] Transform[] waypoints;
