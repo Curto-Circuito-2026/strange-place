@@ -1,6 +1,7 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     public bool canMove = true;
+    public Action OnPlayerJump;
+    public Action OnPlayerSlide;
+    public Action OnPlayerRun;
     IRun curRun;
     IJump curJump;
 
@@ -59,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
             if (Mathf.Abs(rb.linearVelocity.x) >= slideThreshold && canMove)
             {
                 curRun.StartSlide(rb, _input);
+                OnPlayerSlide?.Invoke();
             }
             else
             {
@@ -80,6 +85,8 @@ public class PlayerMovement : MonoBehaviour
         if (value.isPressed && curJump.CanJump && curJump !=null && canMove)
         {
             curJump.Jump(rb);
+            OnPlayerJump?.Invoke();
+            
         }
     }
      
@@ -108,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isRunning", _input.x != 0);
             curRun.Move(rb, _input);
+            OnPlayerRun?.Invoke();
             if (_input.x < 0)
             {
                 transform.localRotation = Quaternion.Euler(0, 180, 0);
