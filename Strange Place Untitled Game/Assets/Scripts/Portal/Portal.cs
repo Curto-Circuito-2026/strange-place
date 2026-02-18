@@ -16,8 +16,7 @@ public class Portal : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
-            pm.canJump = false;
-            pm.canRun = false;
+            pm.canMove = false;
         }
     }
     void OnCollisionEnter2D(Collision2D other)
@@ -27,8 +26,7 @@ public class Portal : MonoBehaviour
             PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
             pm.SetJump(jumpPrefab);
             pm.SetRun(runPrefab);
-            pm.canJump = true;
-            pm.canRun = true;
+            pm.canMove = true;
             //todo
             //remover comentario
             //SceneManager.LoadScene(newSceneName);
