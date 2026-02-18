@@ -2,23 +2,22 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections; 
 
-public class RockHead : MonoBehaviour, ITrap
+public class RockHead : MonoBehaviour
 {
     public List<Transform> waypoints; 
-    public float speed = 3f;
-    public float distance = 0.2f;
-    public float delayTime = 1f; 
+    [SerializeField] float speed = 3f;
+    [SerializeField] float distance = 0.2f;
+    [SerializeField] float delayTime = 1f; 
 
-    public LayerMask layers;
-    public float checkDistance = 0.6f;
+    [SerializeField] bool hasSpikes = false;
+    [SerializeField] LayerMask layers;
+    [SerializeField] float checkDistance = 0.6f;
 
     private int curWaypoint = 0;
     private Animator animator;
     private Rigidbody2D rb;
     private bool isWaiting = false; 
     private bool blinkedThisLeg = false;
-
-    public bool IsOn { get; set; } = true;
 
     void Start()
     {
@@ -29,7 +28,7 @@ public class RockHead : MonoBehaviour, ITrap
 
     void FixedUpdate()
     {
-        if (!isWaiting && IsOn)
+        if (!isWaiting)
         {
             Move();
         }
@@ -60,12 +59,9 @@ public class RockHead : MonoBehaviour, ITrap
     IEnumerator WaitAtWaypoint(Vector2 reachedPos)
     {
         isWaiting = true; 
-
         Vector2 direction = (reachedPos - (Vector2)transform.position).normalized;
         TriggerAnimatorByDirection(direction);
-
         yield return new WaitForSeconds(delayTime);
-
         curWaypoint = (curWaypoint + 1) % waypoints.Count;
         blinkedThisLeg = false;
         isWaiting = false;
@@ -85,22 +81,25 @@ public class RockHead : MonoBehaviour, ITrap
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (hasSpikes && collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Morreu");
+        }
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (!hasSpikes && collision.gameObject.CompareTag("Player"))
         {
             Vector2 direcaoEmpurro = -collision.contacts[0].normal;
             RaycastHit2D hit = Physics2D.Raycast(collision.transform.position, direcaoEmpurro, checkDistance, layers);
 
             if (hit.collider != null)
             {
-                Debug.Log("morri");
+                Debug.Log("Morreu esmagado");
             }
         }
-    }
-
-    public void SetState(bool state)
-    {
-        IsOn = state;
     }
 }
