@@ -53,18 +53,9 @@ using System.Collections;
         Animator.SetBool("isSliding", false);
         StopCoroutine(slideCoroutine);
         rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-        
 
-        RaycastHit2D hit = Physics2D.Raycast(playerCollider.bounds.center, Vector2.up, 1f, ~LayerMask.GetMask("Player"));
-        if (hit.collider != null)
-        {
-            ForcedCrouch = true;
-            Crouch();
-        }
-        else
-        {
-            UnCrouch();
-        }
+
+        UnCrouch();
 
     }
 
@@ -77,11 +68,20 @@ using System.Collections;
     }
     public void UnCrouch()
     {
-        Animator.SetBool("isCrouching", false);
-        IsCrouching = false;
-        ForcedCrouch = false;
-        playerCollider.offset = new Vector2(0, 0);
-        playerCollider.size = new Vector2(0.2f, 0.25f);
+        RaycastHit2D hit = Physics2D.Raycast(playerCollider.bounds.center, Vector2.up, 1f, ~LayerMask.GetMask("Player"));
+        if (hit.collider != null)
+        {
+            ForcedCrouch = true;
+            Crouch();
+        }
+        else
+        {
+            Animator.SetBool("isCrouching", false);
+            IsCrouching = false;
+            ForcedCrouch = false;
+            playerCollider.offset = new Vector2(0, 0);
+            playerCollider.size = new Vector2(0.2f, 0.25f);
+        }
     }
      
 
