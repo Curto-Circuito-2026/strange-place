@@ -9,16 +9,10 @@ public interface IJump
     public float jumpForce { get; set; }
     public float wallReflectForce { get; set; }
 
-    public LayerMask groundLayer { get; set; }
 
-    public LayerMask wallLayer { get; set; }
-
-
-    public void SetValues(float _jumpForce, float _wallReflectForce, LayerMask _groundLayer, LayerMask _wallLayer)
+    public void SetValues(float _jumpForce, float _wallReflectForce)
     {
         jumpForce = _jumpForce;
         wallReflectForce = _wallReflectForce;
-        groundLayer = _groundLayer;
-        wallLayer = _wallLayer;
     }
 }
