@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,6 +18,8 @@ public class BalanceSystem : MonoBehaviour
     [SerializeField] Transform container; 
     [SerializeField] float maxVisualAngle = 30;
 
+    LifeSystem playerLife;
+
     private PlayerMovement movement;
     private Rigidbody2D rb;
     private float playerInput;
@@ -24,6 +27,7 @@ public class BalanceSystem : MonoBehaviour
     void Awake()
     {
         movement = GetComponent<PlayerMovement>();
+        playerLife = GetComponent<LifeSystem>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -111,7 +115,7 @@ public class BalanceSystem : MonoBehaviour
     {
         if (Mathf.Abs(balanceValue) > maxBalanceValue)
         {
-            Debug.Log("CAIU");
+            playerLife.GetDamage(1000);
         }
     }
 }

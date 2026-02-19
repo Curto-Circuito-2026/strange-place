@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour, ITrap
 {
+    [SerializeField] int damage = 10;
     public bool IsOn { get; set; } = true;
 
     public void SetState(bool state)
@@ -14,7 +15,7 @@ public class Spikes : MonoBehaviour, ITrap
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("matei");
+            collision.gameObject.GetComponent<LifeSystem>().GetDamage(damage);
         }
     }
 }

@@ -1,9 +1,11 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FireTrap : MonoBehaviour, ITrap
 {
 
+    [SerializeField] int damage = 10;
     [SerializeField] float timeUntilFire;
     [SerializeField] float fireOnTime;
     public bool IsOn { get; set; }
@@ -26,7 +28,7 @@ public class FireTrap : MonoBehaviour, ITrap
     {
         if(collision.gameObject.CompareTag("Player") && burning)
         {
-            Debug.Log("morri");
+            collision.gameObject.GetComponent<LifeSystem>().GetDamage(damage);
         }
     }
     void OnCollisionEnter2D(Collision2D collision)

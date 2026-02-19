@@ -22,7 +22,6 @@ public class Trampolim : MonoBehaviour, ITrap
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("colide");
         if(collision.gameObject.CompareTag("Player") && IsOn)
         {
             animator.SetTrigger("Jump");

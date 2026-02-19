@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
 public class Saw : MonoBehaviour, ITrap
 {
-    [SerializeField] float damage;
+    [SerializeField] int damage = 10;
    
     public bool IsOn {get;set;} = true;
 
@@ -48,7 +49,7 @@ public class Saw : MonoBehaviour, ITrap
     {
         if(IsOn && collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("matei");
+            collision.gameObject.GetComponent<LifeSystem>().GetDamage(damage);
         }
 
     }

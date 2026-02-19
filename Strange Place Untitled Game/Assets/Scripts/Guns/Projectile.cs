@@ -2,13 +2,10 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [Header("Configurações Visuais")]
     [SerializeField] Sprite sprite;
-
-    [Header("Atributos")]
-    [SerializeField] float speed = 10f;
-    [SerializeField] float damage = 10f;
-    [SerializeField] float lifeTime = 5f;
+    [SerializeField] float speed = 10;
+    [SerializeField] int damage = 10;
+    [SerializeField] float lifeTime = 5;
 
     private Vector2 moveDirection; 
     private SpriteRenderer spriteRenderer;
@@ -37,7 +34,11 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Colidiu com " + collision.name);
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<LifeSystem>().GetDamage(damage);    
+        }
+        
         Destroy(gameObject);
     }
 }

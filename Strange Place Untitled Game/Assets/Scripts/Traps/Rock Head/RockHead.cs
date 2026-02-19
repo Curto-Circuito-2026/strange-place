@@ -13,6 +13,7 @@ public class RockHead : MonoBehaviour
     [SerializeField] LayerMask layers;
     [SerializeField] float checkDistance = 0.6f;
 
+    [SerializeField] int damage = 10;
     private int curWaypoint = 0;
     private Animator animator;
     private Rigidbody2D rb;
@@ -85,7 +86,7 @@ public class RockHead : MonoBehaviour
     {
         if (hasSpikes && collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Morreu");
+            collision.gameObject.GetComponent<LifeSystem>().GetDamage(damage);
         }
     }
 
@@ -98,7 +99,7 @@ public class RockHead : MonoBehaviour
 
             if (hit.collider != null)
             {
-                Debug.Log("Morreu esmagado");
+                collision.gameObject.GetComponent<LifeSystem>().GetDamage(damage);
             }
         }
     }
