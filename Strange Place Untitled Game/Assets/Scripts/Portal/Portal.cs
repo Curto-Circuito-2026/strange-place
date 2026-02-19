@@ -18,8 +18,7 @@ public class Portal : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
-            pm.canJump = false;
-            pm.canRun = false;
+            pm.canMove = false;
         }
         else
         {
@@ -29,7 +28,7 @@ public class Portal : MonoBehaviour
         // Completa fase
         GameRunTimer.Instance.CompletePhase(phaseName);
 
-        // Se for última fase
+        // Se for ï¿½ltima fase
         if (nextSceneName == "")
         {
             GameRunTimer.Instance.StopRun();

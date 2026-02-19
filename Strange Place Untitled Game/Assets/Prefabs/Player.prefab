@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 7806129431376255789}
   - component: {fileID: 2388029591526526639}
   - component: {fileID: 1700850326890724785}
-  - component: {fileID: 6922766904655268681}
   - component: {fileID: 289366782483348618}
   - component: {fileID: 4832219074755518990}
   - component: {fileID: 8815436007485707020}
+  - component: {fileID: 843779432128834346}
+  - component: {fileID: 3036628286941247858}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -123,42 +124,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &6922766904655268681
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3238034514737891134}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6c28a2091afca8047a0dd2ea17234d9f, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.0040696077, y: -0.042589597}
-  m_Radius: 0.08084741
 --- !u!114 &289366782483348618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,8 +138,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   initialRunPrefab: {fileID: 4434982680557025225, guid: a287cdbc2e00dea4fb39774a38cc1960, type: 3}
   initialJumpPrefab: {fileID: 6476258969552563352, guid: e1c5fe52037b6b04a9a2d5bd114d73ab, type: 3}
-  canRun: 1
-  canJump: 1
+  playerCollider: {fileID: 843779432128834346}
+  maxSpeed: 12
+  acceleration: 10
+  deceleration: 12
+  slideThreshold: 5
+  jumpForce: 7
+  wallReflectForce: 50
+  canMove: 1
 --- !u!114 &4832219074755518990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,3 +198,61 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &843779432128834346
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238034514737891134}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.2, y: 0.25}
+  m_Direction: 0
+--- !u!114 &3036628286941247858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238034514737891134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9cbae7f2a42ab8438607cb5bdd10d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BalanceSystem
+  balanceValue: 0
+  maxBalanceValue: 1
+  gravityForce: 0.8
+  recoveryForce: 2.5
+  runInstability: 0.15
+  jumpInstability: 0.4
+  slideInstability: 0.6
+  container: {fileID: 0}
+  maxVisualAngle: 30

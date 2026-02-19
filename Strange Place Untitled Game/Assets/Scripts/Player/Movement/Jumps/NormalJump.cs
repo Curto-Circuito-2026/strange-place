@@ -2,32 +2,18 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 
-
 public class NormalJump : MonoBehaviour, IJump
 {
     public bool CanJump { get; private set; } = true;
     public Animator Animator { get; set; }
 
-    //todo
-    //dar um jeito de tirar esses valores setados por codigo e passar pro inspetor
-
-    #region jump
-    [Header("Força do pulo")]
-    [SerializeField] float jumpForce = 7f;
-    [SerializeField] float wallReflectForce = 50f;
-    
-    [Header("Camadas de detecção")]
-    [SerializeField] LayerMask groundLayer= (1<<8);
-    [SerializeField] LayerMask wallLayer = (1<<9);
+    public float jumpForce { get; set; }
+    public float wallReflectForce { get; set; }
 
     float opositeForce;
 
-    #endregion
-
-
     public void Jump(Rigidbody2D rb)
     {
-    
         Animator.SetTrigger("Jump");
         rb.linearVelocity = new Vector2(wallReflectForce*opositeForce, jumpForce);
         CanJump = false;
@@ -37,25 +23,27 @@ public class NormalJump : MonoBehaviour, IJump
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(((1 << collision.gameObject.layer) & groundLayer) != 0)
+
+        Vector2 normal = collision.contacts[0].normal;
+
+        if (1f - Mathf.Abs(normal.x) <= 0.1f) //wall
         {
-            Animator.SetBool("isGrounded",true);
+            Animator.SetBool("inWall", true);
+            CanJump = true;
+            opositeForce = transform.position.x - collision.transform.position.x > 0 ? 1 : -1;
+
+        }
+
+        else if (1f - Mathf.Abs(normal.y) <= 0.1f) // ground
+        {
+            Animator.SetBool("isGrounded", true);
             CanJump = true;
             opositeForce = 0;
-        }
-        else if(((1 << collision.gameObject.layer) & wallLayer) != 0)
-        {
-            Animator.SetBool("inWall",true);
-            CanJump = true;
-            opositeForce = transform.position.x - collision.transform.position.x>0? 1 : -1;
         }
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-       if(((1 << collision.gameObject.layer) & wallLayer) != 0)
-        {
-            Animator.SetBool("inWall",false);
-        } 
+        Animator.SetBool("inWall", false);
     }
 }
