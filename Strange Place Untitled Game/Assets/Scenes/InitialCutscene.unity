@@ -1408,6 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InitialCutscene
   goingToRight: 0
+  afterSpriteDialog: {fileID: 0}
   moveDistance: 4
   jumpHeight: 0.5
   jumpsDuration: 0.25
@@ -1742,6 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InitialCutscene
   goingToRight: 1
+  afterSpriteDialog: {fileID: 8564045744528754938, guid: e06187f3d8d646948a5c1955b126130e, type: 3}
   moveDistance: 12
   jumpHeight: 0.5
   jumpsDuration: 0.25
