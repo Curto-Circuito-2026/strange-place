@@ -8,29 +8,34 @@ public class Portal : MonoBehaviour
 
     [SerializeField] float suctionForce;
     [SerializeField] float suctionSpeed;
-    [SerializeField] string newSceneName;
- 
+       
+    [SerializeField] string nextSceneName;
+    [SerializeField] string phaseName;
 
-    void OnTriggerEnter2D(Collider2D other)
+     void OnTriggerEnter2D(Collider2D other)
     {
+        
         if(other.gameObject.CompareTag("Player"))
         {
             PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
             pm.canMove = false;
         }
-    }
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if(other.gameObject.CompareTag("Player"))
+        else
         {
-            PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
-            pm.SetJump(jumpPrefab);
-            pm.SetRun(runPrefab);
-            pm.canMove = true;
-            //todo
-            //remover comentario
-            //SceneManager.LoadScene(newSceneName);
-            Debug.Log("mandar pra outra scene");
+            return;
+        }
+
+        // Completa fase
+        //GameRunTimer.Instance.CompletePhase(phaseName);
+
+        // Se for �ltima fase
+        if (nextSceneName == "")
+        {
+            //GameRunTimer.Instance.StopRun();
+        }
+        else
+        {
+            SceneManager.LoadScene(nextSceneName);
         }
     }
     void OnTriggerStay2D(Collider2D other)
