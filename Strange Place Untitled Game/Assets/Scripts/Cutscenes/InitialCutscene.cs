@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Microsoft.Unity.VisualStudio.Editor;
@@ -14,12 +15,33 @@ public class InitialCutscene : MonoBehaviour
     [SerializeField] Sprite bossImage;
     [SerializeField] Sprite characterImage;
 
+
+
     [SerializeField] List<MovinCharCutscene> charsInCutscene;
     void Start()
     {
         StartCoroutine(StartCutscene());
     }
     IEnumerator StartCutscene()
+    {
+        yield return MoveCharacters();
+
+        yield return PlayConversation();
+        InvertCharacters();
+        yield return MoveCharacters();
+        Debug.Log("ACABO DE VEZ INVENTA UM FLUXO AI");
+    }
+
+    private void InvertCharacters()
+    {
+        foreach(var character in charsInCutscene)
+        {
+            character.ChangeSprite(false);
+            character.InvertDirection();
+        }
+    }
+
+    IEnumerator MoveCharacters()
     {
         foreach(var character in charsInCutscene)
         {
@@ -31,9 +53,7 @@ public class InitialCutscene : MonoBehaviour
                 if(character.inAnimation) return false;
             }
             return true;
-    });
-
-        StartCoroutine(PlayConversation());
+        });
     }
     IEnumerator PlayConversation()
     {
@@ -64,5 +84,7 @@ public class InitialCutscene : MonoBehaviour
                 (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
             );
         }
+
+        DialogSystem.Instance.SetActive(false);
     }
 }
