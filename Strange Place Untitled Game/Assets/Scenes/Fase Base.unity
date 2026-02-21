@@ -135941,6 +135941,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2388029591526526639, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6225194059825796960, guid: 4ce0c99d70425d54ca0e9904f1ecff48, type: 3}
+    - target: {fileID: 2388029591526526639, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3238034514737891134, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -136001,6 +136009,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8815436007485707020, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815436007485707020, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d8e70684a5b950043938cd3f800183ec, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -136020,6 +136036,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1886065762116156614, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
       propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886065762116156614, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
