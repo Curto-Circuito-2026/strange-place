@@ -17,24 +17,19 @@ public class Portal : MonoBehaviour
         
         if(!other.gameObject.CompareTag("Player"))
         {
-            PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
-            pm.canMove = false;
-        }
-        else
-        {
             return;
             
         }
 
-        //PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
-        //pm.canMove = false;
+        PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
+        pm.canMove = false;
         //pm.SetJump(jumpPrefab);
         //pm.SetRun(runPrefab);
 
         // Completa fase
         GameRunTimer.Instance.CompletePhase(phaseName);
 
-        // Se for ultima fase
+        // Se for �ltima fase
         if (nextSceneName == "")
         {
             GameRunTimer.Instance.StopRun();
