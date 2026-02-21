@@ -9,17 +9,26 @@ EditorBuildSettings:
     path: Assets/Scenes/ArthurScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Fase Base.unity
+    path: Assets/Scenes/FaseBase3.unity
     guid: 027a9efee7f57a84ca60d9f3ab6486fc
   - enabled: 1
-    path: Assets/Scenes/FaseTeste.unity
+    path: Assets/Scenes/ScenesTestes/FaseTeste.unity
     guid: 249f0721a9b082b4489071cbe11a3ddf
   - enabled: 1
-    path: Assets/Scenes/FaseTeste1.unity
+    path: Assets/Scenes/ScenesTestes/FaseTeste1.unity
     guid: f04fba496abdf5a4f8966dff7cf1cd30
   - enabled: 1
-    path: Assets/Scenes/FaseTeste2.unity
+    path: Assets/Scenes/ScenesTestes/FaseTeste2.unity
     guid: ecb2b8ab7c3a12d428b8cc9ca5e7db47
+  - enabled: 1
+    path: Assets/Scenes/FaseBase1.unity
+    guid: 258dcd7dbc7e46d48ac19bdd1e8d7c1e
+  - enabled: 1
+    path: Assets/Scenes/FaseBase2.unity
+    guid: 6ab9ecdddcc0eff40b1de80b3ba9ad86
+  - enabled: 1
+    path: Assets/Scenes/FaseBase4.unity
+    guid: a48002a9241659d41a29e92fda1ea00d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
