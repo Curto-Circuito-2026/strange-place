@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class BalanceSystem : MonoBehaviour
 {
     [Header("Equilibrio")]
-    [Range(-1.2f, 1.2f)] public float balanceValue = 0; 
+    [Range(-1.0f, 1.0f)] public float balanceValue = 0; 
 
     [SerializeField] float maxBalanceValue = 1;
     [SerializeField] float gravityForce = 0.8f;      
@@ -42,7 +42,6 @@ public class BalanceSystem : MonoBehaviour
     public void OnBalance(InputValue value)
     {
         playerInput = value.Get<float>();
-        Debug.Log(playerInput);
     }
 
     void Update()
@@ -53,7 +52,7 @@ public class BalanceSystem : MonoBehaviour
         {
             balanceValue += playerInput * recoveryForce * Time.deltaTime;
         }
-
+        
         ApplyNaturalPhysics();
         UpdateContainer();
         CheckFallCondition();

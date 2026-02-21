@@ -35,9 +35,9 @@ public class LifeSystem : MonoBehaviour
 
     void Die()
     {
-        //pm.canMove = false;
-        animator.SetTrigger("Die");
-        Debug.Log("morri");
+        
+        animator.SetBool("Dead",true);
+        pm.canMove = false;
     }
 
 
