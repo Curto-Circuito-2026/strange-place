@@ -1,9 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Unity.UI;
+using UnityEngine.UI;
 
 public class InitialCutscene : MonoBehaviour
 {
@@ -12,9 +12,12 @@ public class InitialCutscene : MonoBehaviour
     ///"B: berebebebe"  
     [SerializeField] List<string> dialogueLines;
 
+    [SerializeField] GameObject imageBackground;
     [SerializeField] Sprite bossImage;
     [SerializeField] Sprite characterImage;
-
+    [SerializeField] Sprite openDoorSprite;
+    [SerializeField] Sprite closedDoorSprite;
+    [SerializeField] float timeUntilStart = 0.2f;
 
 
     [SerializeField] List<MovinCharCutscene> charsInCutscene;
@@ -24,11 +27,16 @@ public class InitialCutscene : MonoBehaviour
     }
     IEnumerator StartCutscene()
     {
+
+        yield return new WaitForSeconds(timeUntilStart);
+        imageBackground.GetComponent<SpriteRenderer>().sprite = openDoorSprite;
+        yield return new WaitForSeconds(timeUntilStart);
         yield return MoveCharacters();
 
         yield return PlayConversation();
         InvertCharacters();
         yield return MoveCharacters();
+        imageBackground.GetComponent<SpriteRenderer>().sprite = closedDoorSprite;
         Debug.Log("ACABO DE VEZ INVENTA UM FLUXO AI");
     }
 
