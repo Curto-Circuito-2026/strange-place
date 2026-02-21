@@ -135941,33 +135941,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2388029591526526639, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -6225194059825796960, guid: 4ce0c99d70425d54ca0e9904f1ecff48, type: 3}
-    - target: {fileID: 2388029591526526639, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3238034514737891134, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3238034514737891134, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6922766904655268681, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      propertyPath: m_Radius
-      value: 0.11355776
-      objectReference: {fileID: 0}
-    - target: {fileID: 6922766904655268681, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0040696077
-      objectReference: {fileID: 0}
-    - target: {fileID: 6922766904655268681, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.009879255
       objectReference: {fileID: 0}
     - target: {fileID: 7806129431376255789, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -136009,14 +135985,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8815436007485707020, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8815436007485707020, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d8e70684a5b950043938cd3f800183ec, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
