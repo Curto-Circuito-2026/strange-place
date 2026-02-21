@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 23c8e0833c647244284c8fe17261deba
+guid: bf4da4ea7ab2455458c3d0a6a2b20f9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2030725191275186379
-    second: mobilia_0
+      213: 9153440286839548769
+    second: portas_0
   - first:
-      213: 7829268814317949448
-    second: mobilia_1
-  - first:
-      213: 6879430261362624039
-    second: mobilia_2
+      213: 2602109860905833396
+    second: portas_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +103,35 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mobilia_0
+      name: portas_0
       rect:
         serializedVersion: 2
         x: 0
+        y: 0
+        width: 14
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b22d1a17d870f70800000000000000
+      internalID: 9153440286839548769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portas_1
+      rect:
+        serializedVersion: 2
+        x: 20
         y: 8
-        width: 34
-        height: 31
+        width: 23
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 537fa91a23a61d3e0800000000000000
-      internalID: -2030725191275186379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mobilia_1
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 0
-        width: 31
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8021770618627ac60800000000000000
-      internalID: 7829268814317949448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mobilia_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 0
-        width: 36
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7268799bf55a87f50800000000000000
-      internalID: 6879430261362624039
+      spriteID: 4b355d5c12d8c1420800000000000000
+      internalID: 2602109860905833396
       vertices: []
       indices: 
       edges: []
@@ -185,9 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mobilia_0: -2030725191275186379
-      mobilia_1: 7829268814317949448
-      mobilia_2: 6879430261362624039
+      portas_0: 9153440286839548769
+      portas_1: 2602109860905833396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

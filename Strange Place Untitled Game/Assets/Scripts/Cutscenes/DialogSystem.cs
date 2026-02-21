@@ -26,7 +26,7 @@ public class DialogSystem : MonoBehaviour
         Instance=this;
        
     }
-    void SetActive(bool state)
+    public void SetActive(bool state)
     {
         isDialogActive = state;
         dialogObject.SetActive(isDialogActive);

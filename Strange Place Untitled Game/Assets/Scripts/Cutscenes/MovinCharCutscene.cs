@@ -5,6 +5,8 @@ using UnityEngine;
 public class MovinCharCutscene : MonoBehaviour
 {
     [SerializeField] bool goingToRight;
+
+    [SerializeField] Sprite afterSpriteDialog;
     public float moveDistance = 5f; 
     public float jumpHeight = 0.5f; 
     public float jumpsDuration = 0.3f; 
@@ -14,8 +16,14 @@ public class MovinCharCutscene : MonoBehaviour
     public bool inAnimation;
 
 
+    Sprite original;
+    SpriteRenderer sr;
+
     void Awake()
     {
+        sr = GetComponent<SpriteRenderer>();
+        if(afterSpriteDialog == null) afterSpriteDialog = sr.sprite;
+        original = sr.sprite;
         originalScale=transform.localScale;
     }
 
@@ -50,5 +58,22 @@ public class MovinCharCutscene : MonoBehaviour
         
         sequence.Play();
         yield return sequence.WaitForCompletion(); 
+    }
+
+    public void ChangeSprite(bool original)
+    {
+        if(original)
+        {
+            sr.sprite = this.original;
+        }
+        else
+        {
+            sr.sprite = afterSpriteDialog;
+        }
+    }
+
+    public void InvertDirection()
+    {
+        goingToRight = !goingToRight;
     }
 }

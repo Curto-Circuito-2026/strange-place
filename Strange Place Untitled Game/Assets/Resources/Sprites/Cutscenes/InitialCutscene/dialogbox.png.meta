@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 23c8e0833c647244284c8fe17261deba
+guid: 6514f6a157ebf2546b4b52f617b43470
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2030725191275186379
-    second: mobilia_0
-  - first:
-      213: 7829268814317949448
-    second: mobilia_1
-  - first:
-      213: 6879430261362624039
-    second: mobilia_2
+      213: -5323087837003181992
+    second: dialogbox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,67 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mobilia_0
+      name: dialogbox_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 34
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 537fa91a23a61d3e0800000000000000
-      internalID: -2030725191275186379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mobilia_1
-      rect:
-        serializedVersion: 2
-        x: 36
         y: 0
-        width: 31
-        height: 39
+        width: 760
+        height: 340
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 60, z: 70, w: 40}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8021770618627ac60800000000000000
-      internalID: 7829268814317949448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mobilia_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 0
-        width: 36
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7268799bf55a87f50800000000000000
-      internalID: 6879430261362624039
+      spriteID: 850193fa0d79026b0800000000000000
+      internalID: -5323087837003181992
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0ef55b6ccc6e89b4b856b181e490238a
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mobilia_0: -2030725191275186379
-      mobilia_1: 7829268814317949448
-      mobilia_2: 6879430261362624039
+      dialogbox_0: -5323087837003181992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

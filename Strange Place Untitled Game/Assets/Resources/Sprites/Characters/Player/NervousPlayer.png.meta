@@ -1,115 +1,115 @@
 fileFormatVersion: 2
-guid: 4ce0c99d70425d54ca0e9904f1ecff48
+guid: e06187f3d8d646948a5c1955b126130e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2053989363645956680
-    second: pixilart-sprite (1)_0
+      213: -923994315097029292
+    second: pixilart-sprite (2)_0
   - first:
-      213: -996435834641883867
-    second: pixilart-sprite (1)_1
+      213: -229995298867008772
+    second: pixilart-sprite (2)_1
   - first:
-      213: -1493032810441443054
-    second: pixilart-sprite (1)_2
+      213: -1783533796186425835
+    second: pixilart-sprite (2)_2
   - first:
-      213: 4089393204286459484
-    second: pixilart-sprite (1)_3
+      213: 1889098082387582969
+    second: pixilart-sprite (2)_3
   - first:
-      213: 2512838835981015971
-    second: pixilart-sprite (1)_4
+      213: 7899505899083245597
+    second: pixilart-sprite (2)_4
   - first:
-      213: 1733115899004987713
-    second: pixilart-sprite (1)_5
+      213: -5158777585343704012
+    second: pixilart-sprite (2)_5
   - first:
-      213: -9120641473257577916
-    second: pixilart-sprite (1)_6
+      213: 5970426896927275092
+    second: pixilart-sprite (2)_6
   - first:
-      213: 690564946465236327
-    second: pixilart-sprite (1)_7
+      213: -169003560480546868
+    second: pixilart-sprite (2)_7
   - first:
-      213: -6225194059825796960
-    second: pixilart-sprite (1)_8
+      213: 8564045744528754938
+    second: pixilart-sprite (2)_8
   - first:
-      213: 7889891556203959014
-    second: pixilart-sprite (1)_9
+      213: 2463105957588261398
+    second: pixilart-sprite (2)_9
   - first:
-      213: 8289185144294502338
-    second: pixilart-sprite (1)_10
+      213: 1931297613831113019
+    second: pixilart-sprite (2)_10
   - first:
-      213: 8402528521861727461
-    second: pixilart-sprite (1)_11
+      213: -8146595035572039748
+    second: pixilart-sprite (2)_11
   - first:
-      213: 5500914433232186380
-    second: pixilart-sprite (1)_12
+      213: -2060709852588045102
+    second: pixilart-sprite (2)_12
   - first:
-      213: 1662679965942314246
-    second: pixilart-sprite (1)_13
+      213: -3862905591631504663
+    second: pixilart-sprite (2)_13
   - first:
-      213: -3213397390709535742
-    second: pixilart-sprite (1)_14
+      213: 9008387919900638799
+    second: pixilart-sprite (2)_14
   - first:
-      213: 5553407988449842948
-    second: pixilart-sprite (1)_15
+      213: -8142840563163786841
+    second: pixilart-sprite (2)_15
   - first:
-      213: 1331872379299928848
-    second: pixilart-sprite (1)_16
+      213: -1724196047924225681
+    second: pixilart-sprite (2)_16
   - first:
-      213: -2629995622458731045
-    second: pixilart-sprite (1)_17
+      213: -3145371367069697843
+    second: pixilart-sprite (2)_17
   - first:
-      213: -7261558148467329711
-    second: pixilart-sprite (1)_18
+      213: 3828302362399315471
+    second: pixilart-sprite (2)_18
   - first:
-      213: -7632779614236617850
-    second: pixilart-sprite (1)_19
+      213: 3039074129312216589
+    second: pixilart-sprite (2)_19
   - first:
-      213: 1082866870737267761
-    second: pixilart-sprite (1)_20
+      213: 1467217808229456366
+    second: pixilart-sprite (2)_20
   - first:
-      213: -7935269321191738183
-    second: pixilart-sprite (1)_21
+      213: 1312321074652729972
+    second: pixilart-sprite (2)_21
   - first:
-      213: 4779610111609834528
-    second: pixilart-sprite (1)_22
+      213: 7735606963704413264
+    second: pixilart-sprite (2)_22
   - first:
-      213: 8057626118913092219
-    second: pixilart-sprite (1)_23
+      213: 2143895726902528655
+    second: pixilart-sprite (2)_23
   - first:
-      213: 9209364603029374220
-    second: pixilart-sprite (1)_24
+      213: 8911648787142742893
+    second: pixilart-sprite (2)_24
   - first:
-      213: 4341690278714148725
-    second: pixilart-sprite (1)_25
+      213: -5375652985498597496
+    second: pixilart-sprite (2)_25
   - first:
-      213: -7083717143852150
-    second: pixilart-sprite (1)_26
+      213: -3910549130302890958
+    second: pixilart-sprite (2)_26
   - first:
-      213: -4004863979536516832
-    second: pixilart-sprite (1)_27
+      213: -1045029750812651030
+    second: pixilart-sprite (2)_27
   - first:
-      213: -9118527247480913943
-    second: pixilart-sprite (1)_28
+      213: 7170394946240941915
+    second: pixilart-sprite (2)_28
   - first:
-      213: -5341792930625341105
-    second: pixilart-sprite (1)_29
+      213: -4300295331449169579
+    second: pixilart-sprite (2)_29
   - first:
-      213: 8137642480378817263
-    second: pixilart-sprite (1)_30
+      213: 4971924006573325863
+    second: pixilart-sprite (2)_30
   - first:
-      213: -5461049526391811466
-    second: pixilart-sprite (1)_31
+      213: -586228543238034907
+    second: pixilart-sprite (2)_31
   - first:
-      213: 4204665667781962770
-    second: pixilart-sprite (1)_32
+      213: 2202968651588187058
+    second: pixilart-sprite (2)_32
   - first:
-      213: -6930423214397199289
-    second: pixilart-sprite (1)_33
+      213: 6273762282975362722
+    second: pixilart-sprite (2)_33
   - first:
-      213: -4303950834338631624
-    second: pixilart-sprite (1)_34
+      213: 3339726286893616339
+    second: pixilart-sprite (2)_34
   - first:
-      213: -902246404605008332
-    second: pixilart-sprite (1)_35
+      213: 5178313566783557774
+    second: pixilart-sprite (2)_35
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -205,7 +205,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixilart-sprite (1)_0
+      name: pixilart-sprite (2)_0
       rect:
         serializedVersion: 2
         x: 47
@@ -220,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bdb3776e83ce73e0800000000000000
-      internalID: -2053989363645956680
+      spriteID: 4554922e0105d23f0800000000000000
+      internalID: -923994315097029292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_1
+      name: pixilart-sprite (2)_1
       rect:
         serializedVersion: 2
         x: 78
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52d53b243e2fb22f0800000000000000
-      internalID: -996435834641883867
+      spriteID: cfaa5078e74eeccf0800000000000000
+      internalID: -229995298867008772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_2
+      name: pixilart-sprite (2)_2
       rect:
         serializedVersion: 2
         x: 239
@@ -264,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21972afb19ea74be0800000000000000
-      internalID: -1493032810441443054
+      spriteID: 5167761467d9f37e0800000000000000
+      internalID: -1783533796186425835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_3
+      name: pixilart-sprite (2)_3
       rect:
         serializedVersion: 2
         x: 270
@@ -286,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5e0468e37170c830800000000000000
-      internalID: 4089393204286459484
+      spriteID: 9ff559272bc673a10800000000000000
+      internalID: 1889098082387582969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_4
+      name: pixilart-sprite (2)_4
       rect:
         serializedVersion: 2
         x: 431
@@ -308,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ab54749b956fd220800000000000000
-      internalID: 2512838835981015971
+      spriteID: d18a5f703cea0ad60800000000000000
+      internalID: 7899505899083245597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_5
+      name: pixilart-sprite (2)_5
       rect:
         serializedVersion: 2
         x: 462
@@ -330,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14926ca4ab34d0810800000000000000
-      internalID: 1733115899004987713
+      spriteID: 43457565e175868b0800000000000000
+      internalID: -5158777585343704012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_6
+      name: pixilart-sprite (2)_6
       rect:
         serializedVersion: 2
         x: 623
@@ -352,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44269ce37e8fc6180800000000000000
-      internalID: -9120641473257577916
+      spriteID: 458b9cc41a73bd250800000000000000
+      internalID: 5970426896927275092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_7
+      name: pixilart-sprite (2)_7
       rect:
         serializedVersion: 2
         x: 654
@@ -374,14 +374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 765a568f821659900800000000000000
-      internalID: 690564946465236327
+      spriteID: ccfd7cb382497adf0800000000000000
+      internalID: -169003560480546868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_8
+      name: pixilart-sprite (2)_8
       rect:
         serializedVersion: 2
         x: 15
@@ -396,14 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a8263e2cfaab99a0800000000000000
-      internalID: -6225194059825796960
+      spriteID: af805dafa3a99d670800000000000000
+      internalID: 8564045744528754938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_9
+      name: pixilart-sprite (2)_9
       rect:
         serializedVersion: 2
         x: 43
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e214e361968e7d60800000000000000
-      internalID: 7889891556203959014
+      spriteID: 61a523e71d5be2220800000000000000
+      internalID: 2463105957588261398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_10
+      name: pixilart-sprite (2)_10
       rect:
         serializedVersion: 2
         x: 78
@@ -440,14 +440,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cf6e1388f9190370800000000000000
-      internalID: 8289185144294502338
+      spriteID: b3986f382f85dca10800000000000000
+      internalID: 1931297613831113019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_11
+      name: pixilart-sprite (2)_11
       rect:
         serializedVersion: 2
         x: 110
@@ -462,14 +462,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e408a01c27cb9470800000000000000
-      internalID: 8402528521861727461
+      spriteID: cbf84c74afa71fe80800000000000000
+      internalID: -8146595035572039748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_12
+      name: pixilart-sprite (2)_12
       rect:
         serializedVersion: 2
         x: 140
@@ -484,14 +484,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0caf9c288c275c40800000000000000
-      internalID: 5500914433232186380
+      spriteID: 2dc8753ae43e663e0800000000000000
+      internalID: -2060709852588045102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_13
+      name: pixilart-sprite (2)_13
       rect:
         serializedVersion: 2
         x: 207
@@ -506,14 +506,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6057629ae96031710800000000000000
-      internalID: 1662679965942314246
+      spriteID: 9ea1fe9b4d3346ac0800000000000000
+      internalID: -3862905591631504663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_14
+      name: pixilart-sprite (2)_14
       rect:
         serializedVersion: 2
         x: 240
@@ -528,14 +528,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20c47943918b763d0800000000000000
-      internalID: -3213397390709535742
+      spriteID: f4ef89ca519340d70800000000000000
+      internalID: 9008387919900638799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_15
+      name: pixilart-sprite (2)_15
       rect:
         serializedVersion: 2
         x: 272
@@ -550,14 +550,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4079e5c642ba11d40800000000000000
-      internalID: 5553407988449842948
+      spriteID: 7a11bf186a1defe80800000000000000
+      internalID: -8142840563163786841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_16
+      name: pixilart-sprite (2)_16
       rect:
         serializedVersion: 2
         x: 302
@@ -572,14 +572,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01b93565fd2cb7210800000000000000
-      internalID: 1331872379299928848
+      spriteID: f69185064dc6218e0800000000000000
+      internalID: -1724196047924225681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_17
+      name: pixilart-sprite (2)_17
       rect:
         serializedVersion: 2
         x: 332
@@ -594,14 +594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd5d38a6ae0608bd0800000000000000
-      internalID: -2629995622458731045
+      spriteID: dc8302318656954d0800000000000000
+      internalID: -3145371367069697843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_18
+      name: pixilart-sprite (2)_18
       rect:
         serializedVersion: 2
         x: 399
@@ -616,14 +616,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 155f2cc5653c93b90800000000000000
-      internalID: -7261558148467329711
+      spriteID: f06999327bcd02530800000000000000
+      internalID: 3828302362399315471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_19
+      name: pixilart-sprite (2)_19
       rect:
         serializedVersion: 2
         x: 426
@@ -638,14 +638,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 683559c816be21690800000000000000
-      internalID: -7632779614236617850
+      spriteID: d06fbb3a1d5fc2a20800000000000000
+      internalID: 3039074129312216589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_20
+      name: pixilart-sprite (2)_20
       rect:
         serializedVersion: 2
         x: 465
@@ -660,14 +660,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13c65518ead170f00800000000000000
-      internalID: 1082866870737267761
+      spriteID: ee9d4aba2da9c5410800000000000000
+      internalID: 1467217808229456366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_21
+      name: pixilart-sprite (2)_21
       rect:
         serializedVersion: 2
         x: 494
@@ -682,14 +682,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b4bf41689240e190800000000000000
-      internalID: -7935269321191738183
+      spriteID: 4725fed701d463210800000000000000
+      internalID: 1312321074652729972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_22
+      name: pixilart-sprite (2)_22
       rect:
         serializedVersion: 2
         x: 524
@@ -704,19 +704,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02c8e53b216945240800000000000000
-      internalID: 4779610111609834528
+      spriteID: 05cb3a96c856a5b60800000000000000
+      internalID: 7735606963704413264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_23
+      name: pixilart-sprite (2)_23
       rect:
         serializedVersion: 2
-        x: 592
+        x: 590
         y: 68
-        width: 22
+        width: 25
         height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -726,14 +726,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7a69b6934072df60800000000000000
-      internalID: 8057626118913092219
+      spriteID: f8ac0850ec5a0cd10800000000000000
+      internalID: 2143895726902528655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_24
+      name: pixilart-sprite (2)_24
       rect:
         serializedVersion: 2
         x: 624
@@ -748,14 +748,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c054f9a205c3ecf70800000000000000
-      internalID: 9209364603029374220
+      spriteID: d631fa02b598cab70800000000000000
+      internalID: 8911648787142742893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_25
+      name: pixilart-sprite (2)_25
       rect:
         serializedVersion: 2
         x: 657
@@ -770,14 +770,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57706832e48c04c30800000000000000
-      internalID: 4341690278714148725
+      spriteID: 88786935718d565b0800000000000000
+      internalID: -5375652985498597496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_26
+      name: pixilart-sprite (2)_26
       rect:
         serializedVersion: 2
         x: 686
@@ -792,14 +792,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8b83f39565d6eff0800000000000000
-      internalID: -7083717143852150
+      spriteID: 23c5593f840fab9c0800000000000000
+      internalID: -3910549130302890958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_27
+      name: pixilart-sprite (2)_27
       rect:
         serializedVersion: 2
         x: 716
@@ -814,14 +814,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 029f7f5ed6ddb68c0800000000000000
-      internalID: -4004863979536516832
+      spriteID: ae1d81b7afe4f71f0800000000000000
+      internalID: -1045029750812651030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_28
+      name: pixilart-sprite (2)_28
       rect:
         serializedVersion: 2
         x: 16
@@ -836,14 +836,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9effd2bc7cb747180800000000000000
-      internalID: -9118527247480913943
+      spriteID: b5f82f5963c528360800000000000000
+      internalID: 7170394946240941915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_29
+      name: pixilart-sprite (2)_29
       rect:
         serializedVersion: 2
         x: 83
@@ -858,19 +858,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f493262b1a32ed5b0800000000000000
-      internalID: -5341792930625341105
+      spriteID: 55993b31e284254c0800000000000000
+      internalID: -4300295331449169579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_30
+      name: pixilart-sprite (2)_30
       rect:
         serializedVersion: 2
-        x: 205
+        x: 206
         y: 12
-        width: 55
+        width: 54
         height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -880,14 +880,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: feaab1888b6bee070800000000000000
-      internalID: 8137642480378817263
+      spriteID: 72e3a06aa82dff440800000000000000
+      internalID: 4971924006573325863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_31
+      name: pixilart-sprite (2)_31
       rect:
         serializedVersion: 2
         x: 275
@@ -902,14 +902,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 672d99eb3647634b0800000000000000
-      internalID: -5461049526391811466
+      spriteID: 52a2a13fe3c4dd7f0800000000000000
+      internalID: -586228543238034907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_32
+      name: pixilart-sprite (2)_32
       rect:
         serializedVersion: 2
         x: 400
@@ -924,14 +924,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21cac67c529f95a30800000000000000
-      internalID: 4204665667781962770
+      spriteID: 2b33c391154829e10800000000000000
+      internalID: 2202968651588187058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_33
+      name: pixilart-sprite (2)_33
       rect:
         serializedVersion: 2
         x: 467
@@ -946,14 +946,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 74cebb23ec032df90800000000000000
-      internalID: -6930423214397199289
+      spriteID: 2ae7df97e81e01750800000000000000
+      internalID: 6273762282975362722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_34
+      name: pixilart-sprite (2)_34
       rect:
         serializedVersion: 2
         x: 592
@@ -968,14 +968,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 830ff7cf48b4544c0800000000000000
-      internalID: -4303950834338631624
+      spriteID: 3dc04510d57195e20800000000000000
+      internalID: 3339726286893616339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_35
+      name: pixilart-sprite (2)_35
       rect:
         serializedVersion: 2
         x: 659
@@ -990,8 +990,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43625a1eca39a73f0800000000000000
-      internalID: -902246404605008332
+      spriteID: e8058bbc0c01dd740800000000000000
+      internalID: 5178313566783557774
       vertices: []
       indices: 
       edges: []
@@ -1000,7 +1000,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 632c587201a19524dae268f97d5ff06b
+    spriteID: 849e54417902dec458d318e97b4931d3
     internalID: 0
     vertices: []
     indices: 
@@ -1010,42 +1010,42 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pixilart-sprite (1)_0: -2053989363645956680
-      pixilart-sprite (1)_1: -996435834641883867
-      pixilart-sprite (1)_10: 8289185144294502338
-      pixilart-sprite (1)_11: 8402528521861727461
-      pixilart-sprite (1)_12: 5500914433232186380
-      pixilart-sprite (1)_13: 1662679965942314246
-      pixilart-sprite (1)_14: -3213397390709535742
-      pixilart-sprite (1)_15: 5553407988449842948
-      pixilart-sprite (1)_16: 1331872379299928848
-      pixilart-sprite (1)_17: -2629995622458731045
-      pixilart-sprite (1)_18: -7261558148467329711
-      pixilart-sprite (1)_19: -7632779614236617850
-      pixilart-sprite (1)_2: -1493032810441443054
-      pixilart-sprite (1)_20: 1082866870737267761
-      pixilart-sprite (1)_21: -7935269321191738183
-      pixilart-sprite (1)_22: 4779610111609834528
-      pixilart-sprite (1)_23: 8057626118913092219
-      pixilart-sprite (1)_24: 9209364603029374220
-      pixilart-sprite (1)_25: 4341690278714148725
-      pixilart-sprite (1)_26: -7083717143852150
-      pixilart-sprite (1)_27: -4004863979536516832
-      pixilart-sprite (1)_28: -9118527247480913943
-      pixilart-sprite (1)_29: -5341792930625341105
-      pixilart-sprite (1)_3: 4089393204286459484
-      pixilart-sprite (1)_30: 8137642480378817263
-      pixilart-sprite (1)_31: -5461049526391811466
-      pixilart-sprite (1)_32: 4204665667781962770
-      pixilart-sprite (1)_33: -6930423214397199289
-      pixilart-sprite (1)_34: -4303950834338631624
-      pixilart-sprite (1)_35: -902246404605008332
-      pixilart-sprite (1)_4: 2512838835981015971
-      pixilart-sprite (1)_5: 1733115899004987713
-      pixilart-sprite (1)_6: -9120641473257577916
-      pixilart-sprite (1)_7: 690564946465236327
-      pixilart-sprite (1)_8: -6225194059825796960
-      pixilart-sprite (1)_9: 7889891556203959014
+      pixilart-sprite (2)_0: -923994315097029292
+      pixilart-sprite (2)_1: -229995298867008772
+      pixilart-sprite (2)_10: 1931297613831113019
+      pixilart-sprite (2)_11: -8146595035572039748
+      pixilart-sprite (2)_12: -2060709852588045102
+      pixilart-sprite (2)_13: -3862905591631504663
+      pixilart-sprite (2)_14: 9008387919900638799
+      pixilart-sprite (2)_15: -8142840563163786841
+      pixilart-sprite (2)_16: -1724196047924225681
+      pixilart-sprite (2)_17: -3145371367069697843
+      pixilart-sprite (2)_18: 3828302362399315471
+      pixilart-sprite (2)_19: 3039074129312216589
+      pixilart-sprite (2)_2: -1783533796186425835
+      pixilart-sprite (2)_20: 1467217808229456366
+      pixilart-sprite (2)_21: 1312321074652729972
+      pixilart-sprite (2)_22: 7735606963704413264
+      pixilart-sprite (2)_23: 2143895726902528655
+      pixilart-sprite (2)_24: 8911648787142742893
+      pixilart-sprite (2)_25: -5375652985498597496
+      pixilart-sprite (2)_26: -3910549130302890958
+      pixilart-sprite (2)_27: -1045029750812651030
+      pixilart-sprite (2)_28: 7170394946240941915
+      pixilart-sprite (2)_29: -4300295331449169579
+      pixilart-sprite (2)_3: 1889098082387582969
+      pixilart-sprite (2)_30: 4971924006573325863
+      pixilart-sprite (2)_31: -586228543238034907
+      pixilart-sprite (2)_32: 2202968651588187058
+      pixilart-sprite (2)_33: 6273762282975362722
+      pixilart-sprite (2)_34: 3339726286893616339
+      pixilart-sprite (2)_35: 5178313566783557774
+      pixilart-sprite (2)_4: 7899505899083245597
+      pixilart-sprite (2)_5: -5158777585343704012
+      pixilart-sprite (2)_6: 5970426896927275092
+      pixilart-sprite (2)_7: -169003560480546868
+      pixilart-sprite (2)_8: 8564045744528754938
+      pixilart-sprite (2)_9: 2463105957588261398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
