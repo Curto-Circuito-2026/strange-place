@@ -2,31 +2,46 @@ using UnityEngine;
 
 public class LifeSystem : MonoBehaviour
 {
-    [SerializeField] float maxLifes;
+    [SerializeField] float maxLifes = 1;
 
     Animator animator;
     PlayerMovement pm;
-    float curLifes;
+    [SerializeField] float curLifes;
+
+    CapsuleCollider2D playerCollider;
+    Vector2 originalColliderSize;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         pm = GetComponent<PlayerMovement>();
+        playerCollider = GetComponent<CapsuleCollider2D>();
+        originalColliderSize = playerCollider.size;
     }
     void Start()
     {
         curLifes = maxLifes;
     }
 
+    void Update()
+    {
+        if(curLifes>0)
+        {
+            SetAlive();
+        }
+    }
     public void SetAlive()
     {
         pm.canMove = true;
         curLifes = maxLifes;
+        playerCollider.size = originalColliderSize;
     }
 
     public void GetDamage(int damage)
     {
         curLifes -= damage;
+        Debug.Log(damage);
+        Debug.Log(curLifes);
         if(curLifes<=0)
         {
             Die();
@@ -38,6 +53,7 @@ public class LifeSystem : MonoBehaviour
         
         animator.SetBool("Dead",true);
         pm.canMove = false;
+        playerCollider.size = new Vector2(0.01f,0.000f);
     }
 
 
