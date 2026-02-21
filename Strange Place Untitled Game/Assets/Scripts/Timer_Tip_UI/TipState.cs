@@ -19,11 +19,11 @@ public class TipUI : MonoBehaviour
         string status = "";
 
         if (time < tipConfig.maxTime)
-            status = "Máximo";
+            status = "Mï¿½ximo";
         else if (time < tipConfig.highTime)
             status = "Alto";
         else if (time < tipConfig.mediumTime)
-            status = "Médio";
+            status = "Mï¿½dio";
         else if (time < tipConfig.lowTime)
             status = "Baixo";
         else
@@ -39,7 +39,7 @@ public class TipUI : MonoBehaviour
         if (completionTime < tipConfig.maxTime)
         {
             earned = tipConfig.maxTip;
-            status = "Máximo";
+            status = "Mï¿½ximo";
         }
         else if (completionTime < tipConfig.highTime)
         {
@@ -49,7 +49,7 @@ public class TipUI : MonoBehaviour
         else if (completionTime < tipConfig.mediumTime)
         {
             earned = tipConfig.mediumTip;
-            status = "Médio";
+            status = "Mï¿½dio";
         }
         else if (completionTime < tipConfig.lowTime)
         {

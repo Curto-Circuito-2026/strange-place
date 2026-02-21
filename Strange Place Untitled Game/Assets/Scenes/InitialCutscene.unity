@@ -617,7 +617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogSystem
   dialogObject: {fileID: 1789146786}
   text: {fileID: 1051715397}
-  letterPerSecond: 20
+  letterPerSecond: 30
   voiceSound: {fileID: 0}
   speakerImage: {fileID: 890772385}
   talking: 0

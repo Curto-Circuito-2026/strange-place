@@ -18,6 +18,8 @@ public class BalanceSystem : MonoBehaviour
     [SerializeField] Transform container; 
     [SerializeField] float maxVisualAngle = 30;
 
+    [SerializeField] BalanceUI balance;
+
     LifeSystem playerLife;
 
     private PlayerMovement movement;
@@ -40,6 +42,7 @@ public class BalanceSystem : MonoBehaviour
     public void OnBalance(InputValue value)
     {
         playerInput = value.Get<float>();
+        Debug.Log(playerInput);
     }
 
     void Update()
@@ -54,6 +57,7 @@ public class BalanceSystem : MonoBehaviour
         ApplyNaturalPhysics();
         UpdateContainer();
         CheckFallCondition();
+        balance.UpdateBalance(balanceValue);
     }
 
 
