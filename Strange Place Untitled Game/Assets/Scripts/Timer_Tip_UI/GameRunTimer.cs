@@ -8,10 +8,13 @@ public class GameRunTimer : MonoBehaviour
     public List<SplitData> splits = new List<SplitData>();
     public System.Action<SplitData> OnSplitCompleted;
 
+    [SerializeField] private TipUI tipUI;
+
     private float totalTime = 0f;
-    private float phaseStartTime = 0f;
+    private float phaseTime = 0f;   //novo timer
     private bool isRunning = true;
-    
+    private bool isPhaseRunning = false;
+
     void Awake()
     {
         if (Instance == null)
@@ -24,12 +27,15 @@ public class GameRunTimer : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
     void Update()
     {
         if (!isRunning) return;
 
         totalTime += Time.deltaTime;
+
+        if (isPhaseRunning)
+            phaseTime += Time.deltaTime;
     }
 
     public void StartRun()
@@ -40,12 +46,15 @@ public class GameRunTimer : MonoBehaviour
 
     public void StartPhase(string phaseName)
     {
-        phaseStartTime = totalTime;
+        phaseTime = 0f;        //reseta
+        isPhaseRunning = true;
     }
 
     public void CompletePhase(string phaseName)
-    {
-        float phaseTime = totalTime - phaseStartTime;
+{
+        isPhaseRunning = false;
+
+        float finalPhaseTime = phaseTime;
 
         SplitData split = splits.Find(s => s.phaseName == phaseName);
 
@@ -56,16 +65,26 @@ public class GameRunTimer : MonoBehaviour
             splits.Add(split);
         }
 
-        split.lastTime = phaseTime;
-
         float previousBest = split.bestTime;
 
-        if (split.bestTime == 0 || phaseTime < split.bestTime)
-            split.bestTime = phaseTime;
+        split.lastTime = finalPhaseTime;
+
+        OnSplitCompleted?.Invoke(
+            new SplitData
+            {
+                phaseName = split.phaseName,
+                lastTime = finalPhaseTime,
+                bestTime = previousBest,
+                completed = true
+            }
+        );
+
+        if (split.bestTime == 0 || finalPhaseTime < split.bestTime)
+            split.bestTime = finalPhaseTime;
 
         split.completed = true;
 
-        OnSplitCompleted?.Invoke(split);
+        tipUI.CalculateTip(finalPhaseTime);
     }
 
     public float GetTotalTime()
@@ -73,8 +92,14 @@ public class GameRunTimer : MonoBehaviour
         return totalTime;
     }
 
+    public float GetPhaseTime() //Novo Get pra usar com o Tip
+    {
+        return phaseTime;
+    }
+
     public void StopRun()
     {
         isRunning = false;
+        isPhaseRunning = false;
     }
 }

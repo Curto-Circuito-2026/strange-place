@@ -1,32 +1,70 @@
-using TMPro;
 using UnityEngine;
+using TMPro;
 
 public class TipUI : MonoBehaviour
 {
-    public TextMeshProUGUI statusText;
-    public TextMeshProUGUI totalText;
+    [SerializeField] private TipConfig tipConfig;
 
-    private float totalTips = 0f;
+    [SerializeField] private TextMeshProUGUI statusText;
+    [SerializeField] private TextMeshProUGUI totalText;
 
-    public void AddTip(float value)
+    private int totalMoney;
+    void Update()
     {
-        totalTips += value;
-        UpdateUI();
+        float currentTime = GameRunTimer.Instance.GetPhaseTime();
+        PreviewTip(currentTime);
     }
-
-    void UpdateUI()
+    public void PreviewTip(float time)
     {
-        totalText.text = "$ " + totalTips.ToString("F2");
+        string status = "";
 
-        if (totalTips >= 500)
-            statusText.text = "Máximo";
-        else if (totalTips >= 300)
-            statusText.text = "Alto";
-        else if (totalTips >= 150)
-            statusText.text = "Médio";
-        else if (totalTips > 0)
-            statusText.text = "Pouco";
+        if (time < tipConfig.maxTime)
+            status = "Máximo";
+        else if (time < tipConfig.highTime)
+            status = "Alto";
+        else if (time < tipConfig.mediumTime)
+            status = "Médio";
+        else if (time < tipConfig.lowTime)
+            status = "Baixo";
         else
-            statusText.text = "Nada";
+            status = "Nada";
+
+        statusText.text = $"Tip Atual: {status}";
+    }
+    public void CalculateTip(float completionTime)
+    {
+        int earned = 0;
+        string status = "";
+
+        if (completionTime < tipConfig.maxTime)
+        {
+            earned = tipConfig.maxTip;
+            status = "Máximo";
+        }
+        else if (completionTime < tipConfig.highTime)
+        {
+            earned = tipConfig.highTip;
+            status = "Alto";
+        }
+        else if (completionTime < tipConfig.mediumTime)
+        {
+            earned = tipConfig.mediumTip;
+            status = "Médio";
+        }
+        else if (completionTime < tipConfig.lowTime)
+        {
+            earned = tipConfig.lowTip;
+            status = "Baixo";
+        }
+        else
+        {
+            earned = tipConfig.noTip;
+            status = "Nada";
+        }
+
+        totalMoney += earned;
+
+        statusText.text = $"Tip: {status} (+{earned})";
+        totalText.text = $"Total: {totalMoney}";
     }
 }

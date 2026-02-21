@@ -15,27 +15,16 @@ public class Portal : MonoBehaviour
      void OnTriggerEnter2D(Collider2D other)
     {
         
-        if(!other.gameObject.CompareTag("Player"))
-        {
-            PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
+        if (!other.CompareTag("Player"))
+        return;
+
+        PlayerMovement pm = other.GetComponent<PlayerMovement>();
+        if (pm != null)
             pm.canMove = false;
-        }
-        else
-        {
-            return;
-            
-        }
 
-        //PlayerMovement pm = other.gameObject.GetComponent<PlayerMovement>();
-        //pm.canMove = false;
-        //pm.SetJump(jumpPrefab);
-        //pm.SetRun(runPrefab);
-
-        // Completa fase
         GameRunTimer.Instance.CompletePhase(phaseName);
 
-        // Se for ultima fase
-        if (nextSceneName == "")
+        if (string.IsNullOrEmpty(nextSceneName))
         {
             GameRunTimer.Instance.StopRun();
         }
