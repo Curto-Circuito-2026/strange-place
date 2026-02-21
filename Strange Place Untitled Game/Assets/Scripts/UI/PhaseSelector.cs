@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PhaseSelector : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI phaseLoadText;
     [SerializeField] float timeUntilStart;
     [SerializeField] Sprite phasePrintScreen;
     Image phaseImageComponent;
@@ -13,6 +14,7 @@ public class PhaseSelector : MonoBehaviour
     [SerializeField] Sprite loadingImage;
     [SerializeField] Image loadingImageComponent;
     [SerializeField] string phaseName;
+    [SerializeField] string nextSceneName;
     [SerializeField] float expandSpeed = 4f;
     [SerializeField] float timeUntilStatrt = 2f;
 
@@ -38,7 +40,6 @@ public class PhaseSelector : MonoBehaviour
 
     public void OnPhaseClick()
     {
-        Debug.Log("clicou");
         StopAllCoroutines();
         StartCoroutine(ExpandLoadingEffect());
         
@@ -73,8 +74,12 @@ public class PhaseSelector : MonoBehaviour
         rt.SetAsLastSibling();
         loadingScene.transform.SetAsLastSibling(); 
         loadingScene.SetActive(true);
+        phaseLoadText.text = phaseName;
+        phaseLoadText.transform.SetAsLastSibling();
+        phaseLoadText.gameObject.SetActive(true);
         
         yield return new WaitForSeconds(timeUntilStart);
-        SceneManager.LoadScene(phaseName);
+        //todo garantir nome das cenas
+        SceneManager.LoadScene(nextSceneName);
     }
 }
