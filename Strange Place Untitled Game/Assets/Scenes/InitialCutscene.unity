@@ -212,7 +212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &154545749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2257,7 +2257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &830149982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2360,6 +2360,7 @@ MonoBehaviour:
   - 'C: TESTEEEEEEEEEEEEEEE'
   - 'B: TESTADOEEEEEEEEEEEEEE'
   - 'C: VAI SE FUDEEEEEEEEEEEEEEEE'
+  phaseSelector: {fileID: 1501873171}
   imageBackground: {fileID: 390972562}
   bossImage: {fileID: 1188162217514296995, guid: 2b4925d3ccbf45741a876cafc5d54155, type: 3}
   characterImage: {fileID: -2542447431074257466, guid: 2b4925d3ccbf45741a876cafc5d54155, type: 3}
@@ -4875,7 +4876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1501873172
 RectTransform:
   m_ObjectHideFlags: 0

@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 7490ce15ec650ed4c83ae49de4a5dbb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5862057088270566510
+    second: tiles_fase3_0
+  - first:
+      213: 5636618188189199105
+    second: tiles_fase3_1
+  - first:
+      213: -8776547249344018085
+    second: tiles_fase3_2
+  - first:
+      213: -4859928187928016630
+    second: tiles_fase3_3
+  - first:
+      213: 2793657791994488740
+    second: tiles_fase3_4
+  - first:
+      213: 4342744623105184177
+    second: tiles_fase3_5
+  - first:
+      213: -945903855535902312
+    second: tiles_fase3_6
+  - first:
+      213: -6444328093671584069
+    second: tiles_fase3_7
+  - first:
+      213: -901371410307033168
+    second: tiles_fase3_8
+  - first:
+      213: -320038830719107042
+    second: tiles_fase3_9
+  - first:
+      213: -3073148006643419815
+    second: tiles_fase3_10
+  - first:
+      213: -7679434424262371043
+    second: tiles_fase3_11
+  - first:
+      213: -8815819616594349884
+    second: tiles_fase3_12
+  - first:
+      213: -2440114504666618662
+    second: tiles_fase3_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiles_fase3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1655
+        width: 320
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e648d6ffcd53a5150800000000000000
+      internalID: 5862057088270566510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1622
+        width: 458
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10be589c06a493e40800000000000000
+      internalID: 5636618188189199105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_2
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1691
+        width: 299
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b590b60e6c0733680800000000000000
+      internalID: -8776547249344018085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_3
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 1688
+        width: 62
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0984a4ef011e8cb0800000000000000
+      internalID: -4859928187928016630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_4
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1688
+        width: 153
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a765dbd5f015c620800000000000000
+      internalID: 2793657791994488740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_5
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1688
+        width: 210
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b11c62d937844c30800000000000000
+      internalID: 4342744623105184177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1179
+        width: 693
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8913c1b74797fd2f0800000000000000
+      internalID: -945903855535902312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_7
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1181
+        width: 716
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe82a80eb52196a0800000000000000
+      internalID: -6444328093671584069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_8
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 1179
+        width: 718
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7d4fd5a7fad73f0800000000000000
+      internalID: -901371410307033168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_9
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 690
+        width: 423
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1008ac016efe8bf0800000000000000
+      internalID: -320038830719107042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_10
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 670
+        width: 438
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 955b1d19b2cf955d0800000000000000
+      internalID: -3073148006643419815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_11
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 694
+        width: 382
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d195fe9141b2d6590800000000000000
+      internalID: -7679434424262371043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_12
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 694
+        width: 382
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c039f454cae7a580800000000000000
+      internalID: -8815819616594349884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_fase3_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 339
+        width: 366
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4611a49c8f22ed0800000000000000
+      internalID: -2440114504666618662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tiles_fase3_0: 5862057088270566510
+      tiles_fase3_1: 5636618188189199105
+      tiles_fase3_10: -3073148006643419815
+      tiles_fase3_11: -7679434424262371043
+      tiles_fase3_12: -8815819616594349884
+      tiles_fase3_13: -2440114504666618662
+      tiles_fase3_2: -8776547249344018085
+      tiles_fase3_3: -4859928187928016630
+      tiles_fase3_4: 2793657791994488740
+      tiles_fase3_5: 4342744623105184177
+      tiles_fase3_6: -945903855535902312
+      tiles_fase3_7: -6444328093671584069
+      tiles_fase3_8: -901371410307033168
+      tiles_fase3_9: -320038830719107042
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
