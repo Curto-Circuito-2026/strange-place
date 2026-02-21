@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72a08749d424e6459aacadbc128e479, type: 3}
   m_Name: TipConfig1
   m_EditorClassIdentifier: Assembly-CSharp::TipConfig
-  maxTime: 60
-  highTime: 120
+  maxTime: 5
+  highTime: 10
   mediumTime: 180
   lowTime: 240
   maxTip: 100

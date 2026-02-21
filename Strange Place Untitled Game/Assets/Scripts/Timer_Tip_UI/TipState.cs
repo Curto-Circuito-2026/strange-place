@@ -13,6 +13,7 @@ public class TipUI : MonoBehaviour
     {
         float currentTime = GameRunTimer.Instance.GetPhaseTime();
         PreviewTip(currentTime);
+        //Debug.Log(currentTime); // Debug timer
     }
     public void PreviewTip(float time)
     {
