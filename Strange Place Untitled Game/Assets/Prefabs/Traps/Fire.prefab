@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4407774711060200132
+--- !u!1 &400899803985125996
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1709879968968760602}
-  - component: {fileID: 6901602654764748138}
-  - component: {fileID: 1795762478178587391}
-  - component: {fileID: 4662582829103352064}
-  - component: {fileID: 8504127708815579021}
-  - component: {fileID: 5639543739008810343}
+  - component: {fileID: 1109911035907350224}
+  - component: {fileID: 7232045629979140107}
+  - component: {fileID: 4616992708149653803}
   m_Layer: 8
-  m_Name: Fire
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1709879968968760602
+--- !u!4 &1109911035907350224
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4407774711060200132}
+  m_GameObject: {fileID: 400899803985125996}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9, y: -2.12, z: 0}
-  m_LocalScale: {x: 6.140646, y: 6.140646, z: 6.140646}
+  m_LocalPosition: {x: 0, y: -0.0395, z: 0}
+  m_LocalScale: {x: 0.18880394, y: 0.18880394, z: 0.18880394}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1709879968968760602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6901602654764748138
+--- !u!212 &7232045629979140107
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4407774711060200132}
+  m_GameObject: {fileID: 400899803985125996}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -85,27 +82,27 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5524587542107658741, guid: 2039174a363574a4a9dc7cbdca9fa520, type: 3}
+  m_Sprite: {fileID: -4052885353382394595, guid: 8a64f89da8d75fa47a33529a4a5ebbe7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.17}
+  m_Size: {x: 0.7818182, y: 0.46363637}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &1795762478178587391
+--- !u!95 &4616992708149653803
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4407774711060200132}
+  m_GameObject: {fileID: 400899803985125996}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0e9067b8c4e9b1e42946714c37100cec, type: 2}
+  m_Controller: {fileID: 22100000, guid: 12160eab10ccd7e40bceab25031f850f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -117,6 +114,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &4407774711060200132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1709879968968760602}
+  - component: {fileID: 4662582829103352064}
+  - component: {fileID: 8504127708815579021}
+  - component: {fileID: 5639543739008810343}
+  m_Layer: 8
+  m_Name: Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1709879968968760602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4407774711060200132}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.9, y: -2.12, z: 0}
+  m_LocalScale: {x: 6.140646, y: 6.140646, z: 6.140646}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1109911035907350224}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4662582829103352064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -154,8 +186,8 @@ BoxCollider2D:
   m_Offset: {x: -0.000000007450581, y: -0.005809266}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 1}
-    oldSize: {x: 0.16, y: 0.16}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.7818182, y: 0.46363637}
     newSize: {x: 0.16, y: 0.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -211,5 +243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34853026ff1b1243be355f6a1459a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTrap
-  timeUntilFire: 2
+  damage: 10
+  timeUntilFire: 1
   fireOnTime: 2

@@ -40,8 +40,6 @@ public class LifeSystem : MonoBehaviour
     public void GetDamage(int damage)
     {
         curLifes -= damage;
-        Debug.Log(damage);
-        Debug.Log(curLifes);
         if(curLifes<=0)
         {
             Die();

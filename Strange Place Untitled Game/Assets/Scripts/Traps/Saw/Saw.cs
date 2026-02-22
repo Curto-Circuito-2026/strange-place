@@ -1,29 +1,32 @@
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Saw : MonoBehaviour, ITrap
 {
     [SerializeField] int damage = 10;
-   
+    [SerializeField] float velocidadeRotacao = 100f;
     public bool IsOn {get;set;} = true;
 
     [Header("Movimento por waypoints")]
     [SerializeField] Transform[] waypoints;
     [SerializeField] float speed;
-    Animator animator;
     int currentWaypointIndex = 0;
 
 
     void Awake()
     {
-        animator = GetComponent<Animator>();
         SetState(IsOn);
     }
 
     void Update()
     {
         Move();
+        if(IsOn)
+        {
+            transform.Rotate(0, 0, -velocidadeRotacao * Time.deltaTime);
+        }
         //SÓ PRA TESTAR NO INSPETOR
         //ChangeState(IsOn);
     }
@@ -42,7 +45,6 @@ public class Saw : MonoBehaviour, ITrap
     public void SetState(bool state)
     {   
         IsOn = state;
-        animator.enabled = IsOn;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -51,6 +53,5 @@ public class Saw : MonoBehaviour, ITrap
         {
             collision.gameObject.GetComponent<LifeSystem>().GetDamage(damage);
         }
-
     }
 }

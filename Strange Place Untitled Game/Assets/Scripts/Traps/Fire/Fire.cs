@@ -17,7 +17,7 @@ public class FireTrap : MonoBehaviour, ITrap
     CircleCollider2D fireCollider;
     private void Awake() 
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         fireCollider = GetComponent<CircleCollider2D>();
     }
     public void SetState(bool state)
