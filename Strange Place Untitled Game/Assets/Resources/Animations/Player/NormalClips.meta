@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Strange Place Untitled Game/Assets/Prefabs/UIs/BalanceBarImages.meta
-<<<<<<< HEAD
-guid: fe0af0fc73623e945b8ffd8ee22ec680
-=======
-guid: 5f74a90b34a971448bf3305659bb2d53
->>>>>>> 7361e9e6d22b55900f1f80e80309ccc9806cfd2e
-========
-guid: 27e1aad99b161424eb35178a7ccc8e04
->>>>>>>> ead3a8902e0b1f9156fa300929a18d6ea37b1d2a:Strange Place Untitled Game/Assets/Resources/Animations/Player/NormalClips.meta
+guid: 99df91d4d33e0d74ba4ad5d1043c9763
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
