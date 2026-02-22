@@ -6,10 +6,10 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TrampolimPhase1Controller
+  m_Name: TrampolimPhase3Controller
   m_Controller: {fileID: 9100000, guid: c5b2c01309ff58a498aa7b6fd39d1ba2, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: e9a99d4987a4f7f429811e08bf320522, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: fe05afd067d507749a89f49936b73f88, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e9a99d4987a4f7f429811e08bf320522, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 3ea12fef4a5722a4d9979863457aac2f, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: a972888ee6fc8a14c83dd0306c9f5188, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3ea12fef4a5722a4d9979863457aac2f, type: 2}
