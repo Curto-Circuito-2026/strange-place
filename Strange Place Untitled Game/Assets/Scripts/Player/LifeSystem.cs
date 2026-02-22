@@ -28,18 +28,19 @@ public class LifeSystem : MonoBehaviour
         curLifes = maxLifes;
     }
 
-    void Update()
-    {
-        if(curLifes>0)
-        {
-            SetAlive();
-        }
-    }
+    // void Update()
+    // {
+    //     if(curLifes>0)
+    //     {
+    //         SetAlive();
+    //     }
+    // }
     public void SetAlive()
     {
         pm.canMove = true;
         curLifes = maxLifes;
         playerCollider.size = originalColliderSize;
+        
     }
 
     public void GetDamage(int damage)
@@ -56,7 +57,21 @@ public class LifeSystem : MonoBehaviour
         yield return new WaitForSeconds(2f);
         transformComp.position = originalPosition;
         SetAlive();
+        ResetFallingPlatform();
+        animator.SetBool("Dead",false);
+        animator.SetTrigger("Revive");
     }
+
+
+    void ResetFallingPlatform()
+    {
+        
+        foreach(FallingPlatform platform in FindObjectsByType<FallingPlatform>(FindObjectsSortMode.None))
+        {
+            platform.Reset();
+        }
+    }
+
     void Die()
     {
         

@@ -41,7 +41,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 993244614962263027, guid: f1ceb47a5cf33714bb9d533e828c159c, type: 3}
       propertyPath: m_Name
-      value: Saw (5) Variant
+      value: Saw Phase 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2107859673302908114, guid: f1ceb47a5cf33714bb9d533e828c159c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4478522690242883124, guid: f1ceb47a5cf33714bb9d533e828c159c, type: 3}
       propertyPath: m_Sprite

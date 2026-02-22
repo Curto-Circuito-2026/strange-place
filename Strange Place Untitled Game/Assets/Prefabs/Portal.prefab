@@ -107,11 +107,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a202f867071dc549b036d5bc465ec52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Portal
-  jumpPrefab: {fileID: 6476258969552563352, guid: e1c5fe52037b6b04a9a2d5bd114d73ab, type: 3}
-  runPrefab: {fileID: 6477554069408909856, guid: 727b08a110481d14a9ec757ca289b0d7, type: 3}
   suctionForce: 40
   suctionSpeed: 5
-  newSceneName: 
+  nextSceneName: FaseBase2
+  phaseName: FaseBase1
+  dialogueLines:
+  - teste1
+  - teste2
+  dialogSprite: {fileID: 0}
 --- !u!58 &2539592997507676178
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -147,7 +150,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.8
 --- !u!58 &5317157767950105927
 CircleCollider2D:
   m_ObjectHideFlags: 0

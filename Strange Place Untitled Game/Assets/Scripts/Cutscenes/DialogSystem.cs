@@ -20,11 +20,17 @@ public class DialogSystem : MonoBehaviour
 
     bool isDialogActive;
 
-    public static DialogSystem Instance{get;private set;}
+    public static DialogSystem Instance;
     void Awake()
     {
-        Instance=this;
-       
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     public void SetActive(bool state)
     {

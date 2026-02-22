@@ -10,6 +10,8 @@ public class NormalJump : MonoBehaviour, IJump
     public float jumpForce { get; set; }
     public float wallReflectForce { get; set; }
 
+    bool inWall;
+
     float opositeForce;
 
     public void Jump(Rigidbody2D rb)
@@ -26,11 +28,11 @@ public class NormalJump : MonoBehaviour, IJump
 
         Vector2 normal = collision.contacts[0].normal;
 
-        if (1f - Mathf.Abs(normal.x) <= 0.1f) //wall
+        if (1f - Mathf.Abs(normal.x) <= 0.1f ) //wall
         {
             Animator.SetBool("inWall", true);
             CanJump = true;
-            opositeForce = transform.position.x - collision.transform.position.x > 0 ? 1 : -1;
+            opositeForce = transform.position.x - collision.transform.position.x < 0 ? 1 : -1;
 
         }
 

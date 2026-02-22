@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 public class GameRunTimer : MonoBehaviour
 {
+    [SerializeField] GameObject canvas;
+
+    public BalanceUI balance;
     public static GameRunTimer Instance;
 
     public List<SplitData> splits = new List<SplitData>();
@@ -15,7 +18,7 @@ public class GameRunTimer : MonoBehaviour
     private float phaseTimeTip = 0f;
     private float phaseStartTimeSpeedrun = 0f;
     private float phaseStartTimeTip = 0f;
-    private bool isRunning = true;
+    private bool isRunning = false;
     
     void Awake()
     {
@@ -44,6 +47,7 @@ public class GameRunTimer : MonoBehaviour
     {
         totalTime = 0f;
         isRunning = true;
+        canvas.SetActive(true);
     }
 
     public void StartPhase(string phaseName)
@@ -89,6 +93,7 @@ public class GameRunTimer : MonoBehaviour
     }
     public void StopRun()
     {
+        canvas.SetActive(false);
         isRunning = false;
     }
 }

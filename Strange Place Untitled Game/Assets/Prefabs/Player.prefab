@@ -89,7 +89,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1745704394003921103
 GameObject:
@@ -180,7 +180,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3238034514737891134
 GameObject:
@@ -272,7 +272,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6225194059825796960, guid: 4ce0c99d70425d54ca0e9904f1ecff48, type: 3}
+  m_Sprite: {fileID: 8564045744528754938, guid: e06187f3d8d646948a5c1955b126130e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -329,7 +329,7 @@ MonoBehaviour:
   deceleration: 12
   slideThreshold: 5
   jumpForce: 7
-  wallReflectForce: 50
+  wallReflectForce: 30
   canMove: 1
 --- !u!114 &4832219074755518990
 MonoBehaviour:
@@ -433,6 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LifeSystem
   maxLifes: 100000
+  curLifes: 0
 --- !u!95 &6328590715730026470
 Animator:
   serializedVersion: 7
@@ -560,5 +561,5 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0

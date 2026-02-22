@@ -47,6 +47,8 @@ public abstract class EnemyBase : MonoBehaviour
     protected bool isJumping = false;
     protected bool isWaitingAtWaypoint = false;
 
+    Vector2 originalPos;
+
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -59,8 +61,13 @@ public abstract class EnemyBase : MonoBehaviour
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null) playerTransform = player.transform;
         }
+        originalPos = transform.position;
     }
 
+    public virtual void Reset()
+    {
+        transform.position = originalPos;
+    }
     protected virtual void FixedUpdate()
     {
         CheckGround(); 
@@ -70,7 +77,6 @@ public abstract class EnemyBase : MonoBehaviour
         if (isWaitingAtWaypoint) 
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-            animator.SetBool("isRunning", false);
             return;
         }
 
@@ -147,12 +153,10 @@ public abstract class EnemyBase : MonoBehaviour
             if (Mathf.Abs(diffX) > waypointDistance)
                 transform.localRotation = direction > 0 ? Quaternion.Euler(0, 0, 0) : Quaternion.Euler(0, 180, 0);
             
-            animator.SetBool("isRunning", true);
         }
         else
         {
             rb.linearVelocity = new Vector2(0, verticalVelocity);
-            animator.SetBool("isRunning", false);
         }
     }
 

@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BasesPrincipais/FaseBase4.unity
     guid: a48002a9241659d41a29e92fda1ea00d
+  - enabled: 1
+    path: Assets/Scenes/Prototipos&Testes/FinalCutscene.unity
+    guid: 5f74b58764518274aa11ab6cbcdafe51
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

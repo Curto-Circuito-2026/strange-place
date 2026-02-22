@@ -76,9 +76,18 @@ public class PhaseSelector : MonoBehaviour
         phaseLoadText.text = phaseName;
         phaseLoadText.transform.SetAsLastSibling();
         phaseLoadText.gameObject.SetActive(true);
-        Debug.Log(timeUntilStart);
         yield return new WaitForSeconds(timeUntilStart);
-        //todo garantir nome das cenas
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(nextSceneName);
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == nextSceneName)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+            GameRunTimer.Instance.StartRun();
+        }
     }
 }

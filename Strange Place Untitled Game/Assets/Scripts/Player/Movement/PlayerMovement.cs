@@ -103,6 +103,12 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void CantWalk()
+    {
+        canMove = false;
+        animator.SetBool("isRunning",false);
+        rb.linearVelocityX=0;
+    }
     private void FixedUpdate()
     {
         if (curRun == null)

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1310894903111632063, guid: 155a9bf43a03dd74ab9c0ac38b2baa4c, type: 3}
       propertyPath: m_Name
-      value: Trampolim Variant
+      value: Trampolim Phase 1
       objectReference: {fileID: 0}
     - target: {fileID: 1995877805584946367, guid: 155a9bf43a03dd74ab9c0ac38b2baa4c, type: 3}
       propertyPath: m_Sprite
@@ -30,11 +30,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2981149036528524625, guid: 155a9bf43a03dd74ab9c0ac38b2baa4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.406822
+      value: 20.61
       objectReference: {fileID: 0}
     - target: {fileID: 2981149036528524625, guid: 155a9bf43a03dd74ab9c0ac38b2baa4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.55
+      value: -10.71
       objectReference: {fileID: 0}
     - target: {fileID: 2981149036528524625, guid: 155a9bf43a03dd74ab9c0ac38b2baa4c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.46363637
       objectReference: {fileID: 0}
+    - target: {fileID: 8083740066464944323, guid: 155a9bf43a03dd74ab9c0ac38b2baa4c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: ff900122b2853d944a487df91474531b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

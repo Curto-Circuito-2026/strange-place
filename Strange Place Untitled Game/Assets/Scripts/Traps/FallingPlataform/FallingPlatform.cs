@@ -12,6 +12,9 @@ public class FallingPlatform : MonoBehaviour, ITrap
     Animator animator;
     Rigidbody2D rb;
 
+    Vector2 originalPos;
+    RigidbodyType2D originalRbType;
+
     BoxCollider2D boxCollider;
     public bool IsOn { get; set; } = true;
 
@@ -20,6 +23,8 @@ public class FallingPlatform : MonoBehaviour, ITrap
         animator = GetComponent<Animator>();    
         boxCollider = GetComponent<BoxCollider2D>();    
         rb = GetComponent<Rigidbody2D>();   
+        originalPos = transform.position;
+        originalRbType = rb.bodyType;
     }
     public void SetState(bool state)
     {   
@@ -50,7 +55,14 @@ public class FallingPlatform : MonoBehaviour, ITrap
         SetState(false);
         rb.bodyType = RigidbodyType2D.Dynamic;
         boxCollider.enabled = false;
-        Destroy(gameObject,destroyDelay);
+        //Destroy(gameObject,destroyDelay);
 
+    }
+
+    public void Reset()
+    {
+        boxCollider.enabled = true;
+        rb.bodyType = originalRbType;
+        transform.position = originalPos;
     }
 }
