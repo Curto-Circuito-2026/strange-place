@@ -6,10 +6,10 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EnemyPhase2Controller
+  m_Name: EnemyPhase4Controller
   m_Controller: {fileID: 9100000, guid: d3a1e4bbc9b89af44aafe1a7d41c50e9, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: 4203efc9c1dc64f408a1b9fcb3e9c4e5, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 9b9546d820be0b949975891c5efd92e9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3a174921e023d594c8b08ea8ce93a801, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 9b9546d820be0b949975891c5efd92e9, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 69ced2524fa5dcb4c80f3510709868c9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8dd4594b2071aae478b5249f9a4ab240, type: 2}

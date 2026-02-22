@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3549335491164878879
+--- !u!1001 &8444007069162840425
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,39 +14,19 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: afa5e8e7c5b9450458d4f15be4b541d9, type: 2}
     - target: {fileID: 724244978676486272, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Size.x
-      value: 1.230423
+      value: 0.6862016
       objectReference: {fileID: 0}
     - target: {fileID: 724244978676486272, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Size.y
-      value: 4.6115108
+      value: 3.6117783
       objectReference: {fileID: 0}
     - target: {fileID: 724244978676486272, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Offset.x
-      value: 1.0945358
+      value: -0.04279065
       objectReference: {fileID: 0}
     - target: {fileID: 724244978676486272, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Offset.y
-      value: -0.11521363
-      objectReference: {fileID: 0}
-    - target: {fileID: 1020025523449041724, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
-      propertyPath: CanMove
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1020025523449041724, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
-      propertyPath: isShooter
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1020025523449041724, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
-      propertyPath: shootTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1020025523449041724, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 7895482105068710282, guid: 2cba357089757b348910ec6068da545a, type: 3}
-    - target: {fileID: 1020025523449041724, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
-      propertyPath: followPlayer
-      value: 0
+      value: -0.13550568
       objectReference: {fileID: 0}
     - target: {fileID: 1020025523449041724, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: animatorOverride
@@ -54,23 +34,23 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: afa5e8e7c5b9450458d4f15be4b541d9, type: 2}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.53154
+      value: 0.47851
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.53154
+      value: 0.47851
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.53154
+      value: 0.47851
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.3
+      value: -29.942234
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -41.8
+      value: -13.066
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -106,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2795338349079699037, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Name
-      value: EnemyTest Variant
+      value: EnemyTest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
