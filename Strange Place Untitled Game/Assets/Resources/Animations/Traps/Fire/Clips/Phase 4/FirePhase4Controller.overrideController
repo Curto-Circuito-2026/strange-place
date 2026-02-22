@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FirePhase4Controller
+  m_Controller: {fileID: 9100000, guid: 0e9067b8c4e9b1e42946714c37100cec, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: c7a2368bf1b2bf64cb28b6f55d193f9b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c583004cdc34d544c9476e9becbfb834, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6070dd91b3a90184996d3fda3fdb8418, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c6d3ab3c2f9e37b418433ed75940d450, type: 2}
