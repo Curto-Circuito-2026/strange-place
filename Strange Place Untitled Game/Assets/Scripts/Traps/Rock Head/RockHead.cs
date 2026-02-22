@@ -36,7 +36,7 @@ public class RockHead : MonoBehaviour
     void Move()
     {
         if (waypoints.Count == 0) return;
-
+        if(waypoints[curWaypoint]==null) return;
         Transform destin = waypoints[curWaypoint];
         Vector2 newPos = Vector2.MoveTowards(rb.position, destin.position, speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);

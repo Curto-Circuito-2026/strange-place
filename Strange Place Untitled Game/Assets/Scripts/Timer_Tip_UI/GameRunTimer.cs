@@ -38,8 +38,6 @@ public class GameRunTimer : MonoBehaviour
         totalTime += Time.deltaTime;
         phaseTimeSpeedrun = totalTime - phaseStartTimeSpeedrun;
         phaseTimeTip = totalTime - phaseStartTimeTip;
-        Debug.Log(phaseTimeSpeedrun);
-        Debug.Log(phaseTimeTip);
     }
 
     public void StartRun()
