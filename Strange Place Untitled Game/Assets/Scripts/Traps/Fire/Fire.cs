@@ -10,13 +10,14 @@ public class FireTrap : MonoBehaviour, ITrap
     [SerializeField] float fireOnTime;
     public bool IsOn { get; set; }
 
-    bool burning;
+    bool burning = false;
 
+    Coroutine burningRoutine;
     Animator animator;
     CircleCollider2D fireCollider;
     private void Awake() 
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         fireCollider = GetComponent<CircleCollider2D>();
     }
     public void SetState(bool state)
@@ -24,7 +25,7 @@ public class FireTrap : MonoBehaviour, ITrap
         IsOn = state;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Player") && burning)
         {
@@ -33,23 +34,25 @@ public class FireTrap : MonoBehaviour, ITrap
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player") && !burning)
+        if(collision.gameObject.CompareTag("Player") && burningRoutine == null)
         {
             animator.SetTrigger("Hit");
-            StartCoroutine(StartBurning());
+            burningRoutine = StartCoroutine(StartBurning());
         }
     }
 
     IEnumerator StartBurning()
     {
-        burning = true;
+        
         yield return new WaitForSeconds(timeUntilFire);
+        burning = true;
         animator.SetBool("Burning",burning);
         fireCollider.enabled = true;
         yield return new WaitForSeconds(fireOnTime);
         burning = false;
         animator.SetBool("Burning",burning);
         fireCollider.enabled = burning;
+        burningRoutine = null;
     }
 
 }

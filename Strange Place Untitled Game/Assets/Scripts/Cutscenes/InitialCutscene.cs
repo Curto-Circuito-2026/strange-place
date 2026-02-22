@@ -12,6 +12,7 @@ public class InitialCutscene : MonoBehaviour
     ///"B: berebebebe"  
     [SerializeField] List<string> dialogueLines;
 
+    [SerializeField] GameObject phaseSelector;
     [SerializeField] GameObject imageBackground;
     [SerializeField] Sprite bossImage;
     [SerializeField] Sprite characterImage;
@@ -37,7 +38,8 @@ public class InitialCutscene : MonoBehaviour
         InvertCharacters();
         yield return MoveCharacters();
         imageBackground.GetComponent<SpriteRenderer>().sprite = closedDoorSprite;
-        Debug.Log("ACABO DE VEZ INVENTA UM FLUXO AI");
+        yield return new WaitForSeconds(0.2f);
+        phaseSelector.SetActive(true);
     }
 
     private void InvertCharacters()

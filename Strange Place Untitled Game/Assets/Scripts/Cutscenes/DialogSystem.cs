@@ -42,7 +42,7 @@ public class DialogSystem : MonoBehaviour
         if(!isDialogActive) SetActive(true);
         
         talking =true;
-        //voiceSound.Play();
+        voiceSound.Play();
         text.text="";
         bool isSpecialChar=false;
         foreach(var letter in dialog.ToCharArray()){
@@ -56,7 +56,7 @@ public class DialogSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f/letterPerSecond);
             }
         }
-        //voiceSound.Pause();
+        voiceSound.Pause();
         talking =false;
     } 
     

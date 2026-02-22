@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
- public class NormalRun : MonoBehaviour, IRun
+using System.Data.Common;
+public class NormalRun : MonoBehaviour, IRun
 {
     public float maxSpeed { get; set; }
     public float acceleration { get; set; }
@@ -16,6 +17,12 @@ using System.Collections;
 
     public Coroutine slideCoroutine { get; set; }
 
+    Vector2 originalColliderSize,CrounchColliderSize;
+
+    void Start()
+    {
+        originalColliderSize = playerCollider.size;
+    }
     public void Move(Rigidbody2D rb,Vector2 input)
     {
         float targetSpeed = input.x * maxSpeed;
@@ -64,7 +71,7 @@ using System.Collections;
         Animator.SetBool("isCrouching", true);
         IsCrouching = true;
         playerCollider.offset = new Vector2(0, -0.05f);
-        playerCollider.size = new Vector2(0.15f, 0.0001f);
+        playerCollider.size = new Vector2(0.15f, 0.3f);
     }
     public void UnCrouch()
     {
@@ -80,9 +87,11 @@ using System.Collections;
             IsCrouching = false;
             ForcedCrouch = false;
             playerCollider.offset = new Vector2(0, 0);
-            playerCollider.size = new Vector2(0.2f, 0.25f);
+            playerCollider.size = originalColliderSize;
         }
     }
+
+   
      
 
 }

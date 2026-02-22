@@ -103,8 +103,6 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-
-
     private void FixedUpdate()
     {
         if (curRun == null)
@@ -169,4 +167,6 @@ public class PlayerMovement : MonoBehaviour
         curRun.Animator = animator;
     }
 }
+
+
 }
