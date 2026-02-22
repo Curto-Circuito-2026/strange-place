@@ -1,75 +1,73 @@
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MovinCharCutscene : MonoBehaviour
 {
     [SerializeField] bool goingToRight;
-
+    [SerializeField] Transform targetDestination; 
     [SerializeField] Sprite afterSpriteDialog;
-    public float moveDistance = 5f; 
-    public float jumpHeight = 0.5f; 
-    public float jumpsDuration = 0.3f; 
-    public int jumps = 10;      
+    
+    public float jumpHeight = 50f; 
+    public float totalDuration = 2f; 
+    public int numJumps = 5;        
+    
     Vector2 originalScale;
-
     public bool inAnimation;
-
-
     Sprite original;
-    SpriteRenderer sr;
+    Image sr;
 
     void Awake()
     {
-        sr = GetComponent<SpriteRenderer>();
+        sr = GetComponent<Image>();
         if(afterSpriteDialog == null) afterSpriteDialog = sr.sprite;
         original = sr.sprite;
-        originalScale=transform.localScale;
+        originalScale = transform.localScale;
     }
 
-    public IEnumerator playAnimation(){
-        inAnimation = true;
-        if(goingToRight){
-            transform.localScale=originalScale;
-        }
-        else{
-            transform.localScale= new Vector2(originalScale.x*-1,originalScale.y);
-        }
+    public IEnumerator playAnimation()
+    {
+        if (targetDestination == null) yield break;
 
-        yield return StartCoroutine(JumpAnimation(goingToRight));
+        inAnimation = true;
+
+        float distance = Mathf.Abs(targetDestination.position.x - transform.position.x);
+        float direction = goingToRight ? 1f : -1f;
+        float targetX = transform.position.x + (distance * direction);
+
+        transform.localScale = new Vector2(originalScale.x * direction, originalScale.y);
+
+        yield return StartCoroutine(JumpToTargetAnimation(targetX));
+        
         inAnimation = false;
     }
 
-    IEnumerator JumpAnimation(bool isRight)
+    IEnumerator JumpToTargetAnimation(float endX)
     {
-        float direction = isRight ? 1f : -1f;
-        float distancePerJump = moveDistance / jumps;
-        
         Sequence sequence = DOTween.Sequence();
+        float jumpDuration = totalDuration / numJumps;
+        float startY = transform.position.y;
 
-        for (int i = 0; i < jumps; i++)
+        sequence.Append(transform.DOMoveX(endX, totalDuration).SetEase(Ease.Linear));
+
+        for (int i = 0; i < numJumps; i++)
         {
-            float targetX = transform.position.x + (distancePerJump * (i + 1) * direction);
-            float targetY = transform.position.y + jumpHeight;
-            sequence.Append(transform.DOMoveY(targetY, jumpsDuration / 2).SetEase(Ease.OutQuad));
-            sequence.Append(transform.DOMoveY(transform.position.y, jumpsDuration / 2).SetEase(Ease.InQuad));
-            sequence.Join(transform.DOMoveX(targetX, jumpsDuration).SetEase(Ease.Linear));
+            float jumpStartTime = i * jumpDuration;
+
+            sequence.Insert(jumpStartTime, 
+                transform.DOMoveY(startY + jumpHeight, jumpDuration / 2).SetEase(Ease.OutQuad));
+            
+            sequence.Insert(jumpStartTime + (jumpDuration / 2), 
+                transform.DOMoveY(startY, jumpDuration / 2).SetEase(Ease.InQuad));
         }
-        
-        sequence.Play();
-        yield return sequence.WaitForCompletion(); 
+
+        yield return sequence.Play().WaitForCompletion();
     }
 
-    public void ChangeSprite(bool original)
+    public void ChangeSprite(bool useOriginal)
     {
-        if(original)
-        {
-            sr.sprite = this.original;
-        }
-        else
-        {
-            sr.sprite = afterSpriteDialog;
-        }
+        sr.sprite = useOriginal ? original : afterSpriteDialog;
     }
 
     public void InvertDirection()
