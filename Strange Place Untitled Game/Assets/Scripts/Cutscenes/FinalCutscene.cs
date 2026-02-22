@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class FinalCutscene : MonoBehaviour
 {
@@ -28,14 +29,14 @@ public class FinalCutscene : MonoBehaviour
     {
 
         yield return new WaitForSeconds(timeUntilStart);
-        imageBackground.GetComponent<SpriteRenderer>().sprite = openDoorSprite;
+        imageBackground.GetComponent<Image>().sprite = openDoorSprite;
         yield return new WaitForSeconds(timeUntilStart);
         yield return MoveCharacters();
 
         yield return PlayConversation();
         InvertCharacters();
         yield return MoveCharacters();
-        imageBackground.GetComponent<SpriteRenderer>().sprite = closedDoorSprite;
+        imageBackground.GetComponent<Image>().sprite = closedDoorSprite;
         yield return new WaitForSeconds(0.2f);
         SceneManager.LoadScene(menuScene);
     }
