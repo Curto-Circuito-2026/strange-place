@@ -19,6 +19,21 @@ public class FirstEnemyTest : EnemyBase
         Debug.Log("MORRI");
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (collision.otherCollider is CapsuleCollider2D)
+            {
+                collision.gameObject.GetComponent<LifeSystem>().GetDamage(1000); 
+            }
+            else if (collision.otherCollider is BoxCollider2D)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
     void Update()
     {
         if (isShooter)

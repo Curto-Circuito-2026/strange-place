@@ -14,19 +14,19 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: afa5e8e7c5b9450458d4f15be4b541d9, type: 2}
     - target: {fileID: 724244978676486272, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Size.x
-      value: 0.6862016
+      value: 1.9126086
       objectReference: {fileID: 0}
     - target: {fileID: 724244978676486272, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Size.y
-      value: 3.6117783
+      value: 3.1256192
       objectReference: {fileID: 0}
     - target: {fileID: 724244978676486272, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Offset.x
-      value: -0.04279065
+      value: 0.032515515
       objectReference: {fileID: 0}
     - target: {fileID: 724244978676486272, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_Offset.y
-      value: -0.13550568
+      value: -0.2839203
       objectReference: {fileID: 0}
     - target: {fileID: 1020025523449041724, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: animatorOverride
@@ -34,11 +34,11 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: afa5e8e7c5b9450458d4f15be4b541d9, type: 2}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 0.61872
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 0.58304
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalScale.z
@@ -46,11 +46,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.62
+      value: -27.8582
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.56
+      value: -15.0088
       objectReference: {fileID: 0}
     - target: {fileID: 2594460515271057519, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -99,5 +99,59 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2795338349079699037, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1058598439852010296}
   m_SourcePrefab: {fileID: 100100000, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
+--- !u!1 &6045003723778473780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2795338349079699037, guid: 5286c62a03fc87642a59911ca3c3f7fc, type: 3}
+  m_PrefabInstance: {fileID: 8444007069162840425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1058598439852010296
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6045003723778473780}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.053789943, y: 1.6896145}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.9300003, y: 3.860018}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.7119096, y: 0.48078918}
+  m_EdgeRadius: 0
