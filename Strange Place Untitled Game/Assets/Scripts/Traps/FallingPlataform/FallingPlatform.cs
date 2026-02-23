@@ -42,10 +42,18 @@ public class FallingPlatform : MonoBehaviour, ITrap
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        foreach (ContactPoint2D contact in collision.contacts)
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y-decreaseHeight);
-            StartCoroutine(Fall());
+            if (contact.normal.y < -0.5f)
+            {
+                transform.position = new Vector2(
+                    transform.position.x,
+                    transform.position.y - decreaseHeight
+                );
+
+                StartCoroutine(Fall());
+                break;
+            }
         }
     }
 
