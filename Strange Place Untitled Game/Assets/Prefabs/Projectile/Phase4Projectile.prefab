@@ -108,7 +108,7 @@ MonoBehaviour:
   sprite: {fileID: -1620756871383664666, guid: 4b34d034cba2d1a4a871abdcc7bc1904, type: 3}
   speed: 10
   damage: 10
-  lifeTime: 5
+  lifeTime: 2.5
 --- !u!58 &-3790158753585652326
 CircleCollider2D:
   m_ObjectHideFlags: 0
