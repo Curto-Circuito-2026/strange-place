@@ -1227,6 +1227,7 @@ GameObject:
   - component: {fileID: 282045525}
   - component: {fileID: 282045524}
   - component: {fileID: 282045523}
+  - component: {fileID: 282045527}
   m_Layer: 0
   m_Name: BG
   m_TagString: Untagged
@@ -1317,6 +1318,103 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!82 &282045527
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282045522}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 4aa63a6a59f90f74f82b8b6005272888, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &291900752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59362,12 +59460,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 109.53
+      value: 108.09
       objectReference: {fileID: 0}
     - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.98
+      value: 24.47
       objectReference: {fileID: 0}
     - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
       propertyPath: m_LocalPosition.z
@@ -59401,9 +59511,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4879204597865199270, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8476006774141573972, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
       propertyPath: phaseName
-      value: FaseBase4
+      value: Somewhere
       objectReference: {fileID: 0}
     - target: {fileID: 8476006774141573972, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
       propertyPath: dialogSprite
@@ -59445,7 +59559,12 @@ PrefabInstance:
       propertyPath: 'dialogueLines.Array.data[6]'
       value: Continue, bearer of fragile things.
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8489288729359516399, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8660490326027147594, guid: 1472d7244d88cfd42b5a69816fcdfe53, type: 3}
+    m_RemovedComponents:
+    - {fileID: 6170550510027162480, guid: d698516dac4be06418e2c75d4a5b2076, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
