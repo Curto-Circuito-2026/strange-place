@@ -2169,9 +2169,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1785131743}
     m_Modifications:
     - target: {fileID: 1477694107401627561, guid: bd49d5e51f9f2d745ab542c574bb8995, type: 3}
+      propertyPath: bounceForce
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477694107401627561, guid: bd49d5e51f9f2d745ab542c574bb8995, type: 3}
       propertyPath: yUpThreshold
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1477694107401627561, guid: bd49d5e51f9f2d745ab542c574bb8995, type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 1657314467322466322, guid: 22f0e7e556d22bd46aa2afa7e8c8c413, type: 3}
     - target: {fileID: 1477694107401627561, guid: bd49d5e51f9f2d745ab542c574bb8995, type: 3}
       propertyPath: detectionRange
       value: 5.68
@@ -43683,9 +43691,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1785131743}
     m_Modifications:
     - target: {fileID: 1477694107401627561, guid: bd49d5e51f9f2d745ab542c574bb8995, type: 3}
+      propertyPath: bounceForce
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477694107401627561, guid: bd49d5e51f9f2d745ab542c574bb8995, type: 3}
       propertyPath: yUpThreshold
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1477694107401627561, guid: bd49d5e51f9f2d745ab542c574bb8995, type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 1657314467322466322, guid: 22f0e7e556d22bd46aa2afa7e8c8c413, type: 3}
     - target: {fileID: 1477694107401627561, guid: bd49d5e51f9f2d745ab542c574bb8995, type: 3}
       propertyPath: detectionRange
       value: 5.68

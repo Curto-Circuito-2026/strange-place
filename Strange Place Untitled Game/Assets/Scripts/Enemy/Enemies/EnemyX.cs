@@ -12,6 +12,9 @@ public class FirstEnemyTest : EnemyBase
 
     [SerializeField] float xOffset = 1f; 
 
+
+    [SerializeField] private ParticleSystem deathParticle;
+    [SerializeField] private float bounceForce = 4f;
     float curTime;
 
     public override void OnDeath()
@@ -28,9 +31,21 @@ public class FirstEnemyTest : EnemyBase
                 collision.gameObject.GetComponent<LifeSystem>().GetDamage(1000); 
             }
             else if (collision.otherCollider is BoxCollider2D)
+        {
+            Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
+            if (playerRb != null)
             {
-                Destroy(gameObject);
+                playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, 0f); 
+                playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
             }
+
+            if (deathParticle != null)
+            {
+                Instantiate(deathParticle, transform.position, Quaternion.identity);
+            }
+
+            Destroy(gameObject);
+        }
         }
     }
 

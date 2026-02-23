@@ -56325,6 +56325,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1785131743}
     m_Modifications:
     - target: {fileID: 2120363991259069061, guid: 48f217bd0838d1c488b20d2cd32f1109, type: 3}
+      propertyPath: bounceForce
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120363991259069061, guid: 48f217bd0838d1c488b20d2cd32f1109, type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 1657314467322466322, guid: 22f0e7e556d22bd46aa2afa7e8c8c413, type: 3}
+    - target: {fileID: 2120363991259069061, guid: 48f217bd0838d1c488b20d2cd32f1109, type: 3}
       propertyPath: yDownThreshold
       value: 1.32
       objectReference: {fileID: 0}
@@ -58444,6 +58452,10 @@ PrefabInstance:
       propertyPath: maxLifes
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3036628286941247858, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3238034514737891134, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -58724,6 +58736,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1785131743}
     m_Modifications:
+    - target: {fileID: 2120363991259069061, guid: 48f217bd0838d1c488b20d2cd32f1109, type: 3}
+      propertyPath: bounceForce
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120363991259069061, guid: 48f217bd0838d1c488b20d2cd32f1109, type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 1657314467322466322, guid: 22f0e7e556d22bd46aa2afa7e8c8c413, type: 3}
     - target: {fileID: 2120363991259069061, guid: 48f217bd0838d1c488b20d2cd32f1109, type: 3}
       propertyPath: yDownThreshold
       value: 1.32

@@ -58499,6 +58499,14 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4568371985550322467, guid: ec731a2bb7e274c40b70afed588b46d0, type: 3}
+      propertyPath: bounceForce
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568371985550322467, guid: ec731a2bb7e274c40b70afed588b46d0, type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 1657314467322466322, guid: 22f0e7e556d22bd46aa2afa7e8c8c413, type: 3}
+    - target: {fileID: 4568371985550322467, guid: ec731a2bb7e274c40b70afed588b46d0, type: 3}
       propertyPath: waypoints.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -59357,6 +59365,14 @@ PrefabInstance:
       propertyPath: shootTime
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4568371985550322467, guid: ec731a2bb7e274c40b70afed588b46d0, type: 3}
+      propertyPath: bounceForce
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568371985550322467, guid: ec731a2bb7e274c40b70afed588b46d0, type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 1657314467322466322, guid: 22f0e7e556d22bd46aa2afa7e8c8c413, type: 3}
     - target: {fileID: 4568371985550322467, guid: ec731a2bb7e274c40b70afed588b46d0, type: 3}
       propertyPath: waypoints.Array.size
       value: 0
