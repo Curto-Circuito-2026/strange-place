@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class LifeSystem : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class LifeSystem : MonoBehaviour
     Vector2 originalColliderSize;
     Vector2 originalPosition;
 
+    public Action OnRevive;
     void Awake()
     {
         transformComp = GetComponent<Transform>();
@@ -60,6 +62,7 @@ public class LifeSystem : MonoBehaviour
         ResetFallingPlatform();
         animator.SetBool("Dead",false);
         animator.SetTrigger("Revive");
+        OnRevive?.Invoke();
     }
 
 

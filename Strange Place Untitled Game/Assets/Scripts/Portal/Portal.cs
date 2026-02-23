@@ -25,11 +25,13 @@ public class Portal : MonoBehaviour
         if (!other.gameObject.CompareTag("Player") && !finishedDialog)
         return;
 
-        GameRunTimer.Instance.CompletePhase(phaseName);
+        if(GameRunTimer.Instance!=null){
+            GameRunTimer.Instance.CompletePhase(phaseName);
 
-        if (nextSceneName.ToUpper().Contains("FINAL"))
-        {
-            GameRunTimer.Instance.StopRun();
+            if (nextSceneName.ToUpper().Contains("FINAL"))
+            {
+                GameRunTimer.Instance.StopRun();
+            }
         }
         SceneManager.LoadScene(nextSceneName);
 
@@ -45,7 +47,13 @@ public class Portal : MonoBehaviour
             }
             if(coroutine==null)
             {
-                coroutine = StartCoroutine(DialogCoroutine());
+                if(DialogSystem.Instance !=null){
+                    coroutine = StartCoroutine(DialogCoroutine());
+                }
+                else
+                {
+                    finishedDialog = true;
+                }
             }
 
             if(finishedDialog)

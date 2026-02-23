@@ -117,7 +117,14 @@ public class BalanceSystem : MonoBehaviour
     {
         if (Mathf.Abs(balanceValue) > maxBalanceValue)
         {
+            playerLife.OnRevive -= RestartBalance; 
+            playerLife.OnRevive+=RestartBalance;
             playerLife.GetDamage(1000);
         }
+    }
+
+    void RestartBalance()
+    {
+        balanceValue = 0;
     }
 }

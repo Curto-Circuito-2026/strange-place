@@ -36,8 +36,8 @@ public class GameRunTimer : MonoBehaviour
     void Update()
     {
         
-        Debug.Log(phaseTimeSpeedrun);
-        Debug.Log(phaseTimeTip);
+        //Debug.Log(phaseTimeSpeedrun);
+        //Debug.Log(phaseTimeTip);
         
         if (!isRunning)
         {
