@@ -97,7 +97,7 @@ public class BalanceSystem : MonoBehaviour
     {
         if (balanceValue != 0)
         {
-            float gravityEffect = (balanceValue > 0 ? gravityForce : -gravityForce) * Time.deltaTime;
+            float gravityEffect = -(balanceValue > 0 ? gravityForce : -gravityForce) * Time.deltaTime;
             balanceValue += gravityEffect;
         }
 

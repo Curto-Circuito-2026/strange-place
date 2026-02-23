@@ -18,7 +18,7 @@ public class GameRunTimer : MonoBehaviour
     private float phaseTimeTip = 0f;
     private float phaseStartTimeSpeedrun = 0f;
     private float phaseStartTimeTip = 0f;
-    private bool isRunning = false;
+    private bool isRunning = true;
     
     void Awake()
     {
@@ -35,9 +35,17 @@ public class GameRunTimer : MonoBehaviour
     
     void Update()
     {
-        if (!isRunning) 
+        
+        Debug.Log(phaseTimeSpeedrun);
+        Debug.Log(phaseTimeTip);
+        
+        if (!isRunning)
+        {
+            Debug.Log("Not Running");
             return;
 
+        }
+        
         totalTime += Time.deltaTime;
         phaseTimeSpeedrun = totalTime - phaseStartTimeSpeedrun;
         phaseTimeTip = totalTime - phaseStartTimeTip;
@@ -47,6 +55,7 @@ public class GameRunTimer : MonoBehaviour
     {
         totalTime = 0f;
         isRunning = true;
+        Debug.Log("Running");
         canvas.SetActive(true);
     }
 

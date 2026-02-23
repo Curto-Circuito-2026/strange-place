@@ -39,10 +39,12 @@ public class Portal : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerMovement pm = other.GetComponent<PlayerMovement>();
-            if (pm != null){
+            if (pm != null)
+            {
                 pm.CantWalk();
-                }
-            if(coroutine==null){
+            }
+            if(coroutine==null)
+            {
                 coroutine = StartCoroutine(DialogCoroutine());
             }
 
