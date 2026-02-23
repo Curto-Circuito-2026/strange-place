@@ -49,6 +49,7 @@ public class Saw : MonoBehaviour, ITrap
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if(IsOn && collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<LifeSystem>().GetDamage(damage);

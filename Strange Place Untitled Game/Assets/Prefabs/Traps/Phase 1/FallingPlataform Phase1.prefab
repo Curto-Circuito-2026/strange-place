@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3511779297515472415, guid: e2b2a78bab1703d4db074e5d2d972e9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.69
+      value: -12.14
       objectReference: {fileID: 0}
     - target: {fileID: 3511779297515472415, guid: e2b2a78bab1703d4db074e5d2d972e9a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -88,9 +88,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4376262010704474547, guid: e2b2a78bab1703d4db074e5d2d972e9a, type: 3}
+      propertyPath: fallDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5781988317242375772, guid: e2b2a78bab1703d4db074e5d2d972e9a, type: 3}
       propertyPath: m_Name
-      value: FallingPlataform (2) Variant
+      value: FallingPlataform Phase1
       objectReference: {fileID: 0}
     - target: {fileID: 7070653855427292100, guid: e2b2a78bab1703d4db074e5d2d972e9a, type: 3}
       propertyPath: m_Enabled
