@@ -36,6 +36,14 @@ public class Portal : MonoBehaviour
         SceneManager.LoadScene(nextSceneName);
 
     }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            DialogSystem.Instance.SetActive(false);
+        }
+    }
     void OnTriggerStay2D(Collider2D other)
     {   
         if (other.CompareTag("Player"))
