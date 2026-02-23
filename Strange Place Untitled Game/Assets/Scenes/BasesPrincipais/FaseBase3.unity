@@ -70336,6 +70336,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1267670303410350015, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2053989363645956680, guid: 16c904ccff9e7434195b847636083258, type: 3}
+    - target: {fileID: 1267670303410350015, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1458241889884516228, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
       propertyPath: maxLifes
       value: 1
@@ -70359,6 +70367,14 @@ PrefabInstance:
     - target: {fileID: 6922766904655268681, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
       propertyPath: m_Offset.y
       value: -0.009879255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6974726478396837713, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2053989363645956680, guid: 16c904ccff9e7434195b847636083258, type: 3}
+    - target: {fileID: 6974726478396837713, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7806129431376255789, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
       propertyPath: m_LocalPosition.x
