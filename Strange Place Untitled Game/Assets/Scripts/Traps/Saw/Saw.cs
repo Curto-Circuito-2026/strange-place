@@ -5,8 +5,8 @@ using UnityEngine.UIElements;
 
 public class Saw : MonoBehaviour, ITrap
 {
-    [SerializeField] int damage = 10;
-    [SerializeField] float velocidadeRotacao = 100f;
+    int damage = 10;
+    float velocidadeRotacao = 100f;
     public bool IsOn {get;set;} = true;
 
     [Header("Movimento por waypoints")]

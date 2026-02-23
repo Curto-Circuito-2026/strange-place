@@ -56481,32 +56481,6 @@ Transform:
   - {fileID: 1902049688}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &918422446 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3238034514737891134, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-  m_PrefabInstance: {fileID: 867994974177928167}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &918422447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918422446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9cbae7f2a42ab8438607cb5bdd10d54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BalanceSystem
-  balanceValue: 0
-  maxBalanceValue: 1
-  gravityForce: 0.05
-  recoveryForce: 5
-  runInstability: 0.03
-  jumpInstability: 0.4
-  slideInstability: 0.1
-  container: {fileID: 0}
-  maxVisualAngle: 30
 --- !u!1 &924451678
 GameObject:
   m_ObjectHideFlags: 0
@@ -58440,14 +58414,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3036628286941247858, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3238034514737891134, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 918422447}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e6fed8b58b283149b8ccdda0d6109c4, type: 3}
 --- !u!1001 &2497647138794099907
 PrefabInstance:
