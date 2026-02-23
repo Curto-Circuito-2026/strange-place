@@ -9,28 +9,52 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1003587104223110718, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
+      propertyPath: m_Size.x
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003587104223110718, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
+      propertyPath: m_Size.y
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003587104223110718, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.42
+      value: 1.3125
       objectReference: {fileID: 0}
     - target: {fileID: 1003587104223110718, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.37
+      value: 1.15625
       objectReference: {fileID: 0}
     - target: {fileID: 1155151396153865649, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
       propertyPath: m_Name
-      value: RockHead Variant
+      value: RockHead Phase 2
       objectReference: {fileID: 0}
     - target: {fileID: 2318831148500495533, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3561899310453981568, guid: 8deba1168319cec43a475681d3c1c1a0, type: 3}
+    - target: {fileID: 4341125866620259095, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483096858220443199, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6400001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483096858220443199, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6400001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483096858220443199, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6400001
+      objectReference: {fileID: 0}
     - target: {fileID: 4483096858220443199, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 89.08
+      value: 34.6
       objectReference: {fileID: 0}
     - target: {fileID: 4483096858220443199, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.92
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 4483096858220443199, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62,6 +86,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483096858220443199, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483096858220443199, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020564370011243749, guid: aafafbb869e929449beb532c25ac8c43, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
